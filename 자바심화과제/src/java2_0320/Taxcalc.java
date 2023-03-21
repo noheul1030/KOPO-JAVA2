@@ -3,36 +3,36 @@ package java2_0320;
 public class Taxcalc {
 
 	public static void main(String[] args) {
-		int kopo11_val = 271; // intí˜• ë³€ìˆ˜ valì— 271 ì´ˆê¸°ê°’ ì„¤ì •
-		int kopo11_rate = 3; // intí˜• ë³€ìˆ˜ rateì— 3 ì´ˆê¸°ê°’ ì„¤ì •
+		int kopo11_val = 271; // intÇü º¯¼ö val¿¡ 271 ÃÊ±â°ª ¼³Á¤
+		int kopo11_rate = 3; // intÇü º¯¼ö rate¿¡ 3 ÃÊ±â°ª ¼³Á¤
 
-		int tax = taxcal(kopo11_val, kopo11_rate); // intí˜• ë³€ìˆ˜ taxì— taxcalë©”ì„œë“œì—
-													// íŒŒë¼ë¯¸í„°ë¡œ (kopo11_val,kopo11_rate) ì „ë‹¬í•˜ê³  ê²°ê³¼ê°’ ret ë°›ê¸°
+		int tax = taxcal(kopo11_val, kopo11_rate); // intÇü º¯¼ö tax¿¡ taxcal¸Ş¼­µå¿¡
+													// ÆÄ¶ó¹ÌÅÍ·Î (kopo11_val,kopo11_rate) Àü´ŞÇÏ°í °á°ú°ª ret ¹Ş±â
 
-		System.out.printf("********************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("****************ë‹¨ìˆœ ì„¸ê¸ˆ ê³„ì‚°**************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		// ì‹¤ì œ ì„¸ê¸ˆê³„ì‚° :  kopo11_val * kopo11_rate / 100.0
-		System.out.printf("ì‹¤ì œ ì„¸ê¸ˆê³„ì‚°: %f\n", kopo11_val * kopo11_rate / 100.0);	// %f ì†Œìˆ«ì ìœ¼ë¡œ ì¶œë ¥
+		System.out.printf("********************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("****************´Ü¼ø ¼¼±İ °è»ê**************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		// ½ÇÁ¦ ¼¼±İ°è»ê :  kopo11_val * kopo11_rate / 100.0
+		System.out.printf("½ÇÁ¦ ¼¼±İ°è»ê: %f\n", kopo11_val * kopo11_rate / 100.0);	// %f ¼Ò¼ıÁ¡À¸·Î Ãâ·Â
 		
-		// ì„¸ì „ê°€ê²©: kopo11_val,ì„¸ê¸ˆ: tax,ì„¸ê¸ˆí¬í•¨ê°€ê²©: kopo11_val + tax
-		System.out.printf("ì„¸ì „ê°€ê²©: %d ì„¸ê¸ˆ: %d ì„¸ê¸ˆí¬í•¨ê°€ê²©: %d\n", kopo11_val, tax, kopo11_val + tax);	// %d ì •ìˆ˜ë¡œ ì¶œë ¥
-		System.out.printf("********************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
+		// ¼¼Àü°¡°İ: kopo11_val,¼¼±İ: tax,¼¼±İÆ÷ÇÔ°¡°İ: kopo11_val + tax
+		System.out.printf("¼¼Àü°¡°İ: %d ¼¼±İ: %d ¼¼±İÆ÷ÇÔ°¡°İ: %d\n", kopo11_val, tax, kopo11_val + tax);	// %d Á¤¼ö·Î Ãâ·Â
+		System.out.printf("********************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
 	}
 
-	public static int taxcal(int kopo11_val, int kopo11_rate) { // íŒŒë¼ë¯¸í„°ë¡œ (kopo11_val,kopo11_rate)ê°’ ë°›ìŒ
-		int ret; // intí˜• ret ì„ ì–¸
+	public static int taxcal(int kopo11_val, int kopo11_rate) { // ÆÄ¶ó¹ÌÅÍ·Î (kopo11_val,kopo11_rate)°ª ¹ŞÀ½
+		int ret; // intÇü ret ¼±¾ğ
 
-		// kopo11_valì˜ ë”ë¸” ê°’ê³¼ kopo11_rateì˜ ë”ë¸”ê°’ì„ ê³±í•œ í›„ /100.0 í•œ ê°’ì´
-		// kopo11_val * kopo11_rate / 100ì™€ ê°™ì€ì§€ ----> ì¡°ê±´ë¬¸ í™•ì¸
+		// kopo11_valÀÇ ´õºí °ª°ú kopo11_rateÀÇ ´õºí°ªÀ» °öÇÑ ÈÄ /100.0 ÇÑ °ªÀÌ
+		// kopo11_val * kopo11_rate / 100¿Í °°ÀºÁö ----> Á¶°Ç¹® È®ÀÎ
 
 		if (((double) kopo11_val * (double) kopo11_rate / 100.0) == kopo11_val * kopo11_rate / 100)
 
-			ret = kopo11_val * kopo11_rate / 100; // true --> retì— kopo11_val * kopo11_rate / 100 ê°’ ì €ì¥
+			ret = kopo11_val * kopo11_rate / 100; // true --> ret¿¡ kopo11_val * kopo11_rate / 100 °ª ÀúÀå
 
 		else
 
-			ret = kopo11_val * kopo11_rate / 100 + 1; // else --> retì— kopo11_val * kopo11_rate / 100 +1 ê°’ ì €ì¥
+			ret = kopo11_val * kopo11_rate / 100 + 1; // else --> ret¿¡ kopo11_val * kopo11_rate / 100 +1 °ª ÀúÀå
 
-		return ret; // retì— ì €ì¥ëœ ê°’ return
+		return ret; // ret¿¡ ÀúÀåµÈ °ª return
 	}
 }

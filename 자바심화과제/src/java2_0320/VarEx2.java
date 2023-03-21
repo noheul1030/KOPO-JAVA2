@@ -3,17 +3,17 @@ package java2_0320;
 public class VarEx2 {
 
 	public static void main(String[] args) {
-		int kopo11_x = 10;	// int 10 ì´ˆê¸°ê°’ ì„ ì–¸
-		int kopo11_y = 20;	// int 20 ì´ˆê¸°ê°’ ì„ ì–¸
-		int kopo11_tmp = 0;	// int 0 ì´ˆê¸°ê°’ ì„ ì–¸
+		int kopo11_x = 10;	// int 10 ÃÊ±â°ª ¼±¾ğ
+		int kopo11_y = 20;	// int 20 ÃÊ±â°ª ¼±¾ğ
+		int kopo11_tmp = 0;	// int 0 ÃÊ±â°ª ¼±¾ğ
 
-		System.out.println("x:" + kopo11_x + " y:" + kopo11_y);	// x : 10  y : 20 ì¶œë ¥
+		System.out.println("x:" + kopo11_x + " y:" + kopo11_y);	// x : 10  y : 20 Ãâ·Â
 
-		kopo11_tmp = kopo11_x;	// tmp ë³€ìˆ˜ì— xê°’ 10 ëŒ€ì…
-		kopo11_x = kopo11_y;	// x ë³€ìˆ˜ì— yê°’ 20 ëŒ€ì…
-		kopo11_y = kopo11_tmp;	// y ë³€ìˆ˜ì— xê°’ì´ ë“¤ì–´ê°€ì„œ ë°”ë€ tmpê°’ 10 ëŒ€ì…
+		kopo11_tmp = kopo11_x;	// tmp º¯¼ö¿¡ x°ª 10 ´ëÀÔ
+		kopo11_x = kopo11_y;	// x º¯¼ö¿¡ y°ª 20 ´ëÀÔ
+		kopo11_y = kopo11_tmp;	// y º¯¼ö¿¡ x°ªÀÌ µé¾î°¡¼­ ¹Ù²ï tmp°ª 10 ´ëÀÔ
 
-		System.out.println("x:" + kopo11_x + " y:" + kopo11_y);	// x : 20  y : 10 ì¶œë ¥ 
+		System.out.println("x:" + kopo11_x + " y:" + kopo11_y);	// x : 20  y : 10 Ãâ·Â 
 	}
 
 }

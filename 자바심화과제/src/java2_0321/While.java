@@ -4,28 +4,28 @@ public class While {
 
 	public static void main(String[] args) {
 		
-		int kopo11_iA,kopo11_iB;	// intíƒ€ì… ë³€ìˆ˜ ë‘ê°œ ì„ ì–¸
+		int kopo11_iA,kopo11_iB;	// intÅ¸ÀÔ º¯¼ö µÎ°³ ¼±¾ğ
 		
-		kopo11_iA = 0;	// iA ë³€ìˆ˜ì— ì´ˆê¸°ê°’ 0 ëŒ€ì…
+		kopo11_iA = 0;	// iA º¯¼ö¿¡ ÃÊ±â°ª 0 ´ëÀÔ
 		
-		while(true) {	// true ì¼ë•Œ ë°˜ë³µìœ¼ë¡œ ë„ëŠ” whileë¬¸
+		while(true) {	// true ÀÏ¶§ ¹İº¹À¸·Î µµ´Â while¹®
 			
-			kopo11_iB = 0;	// iB ë³€ìˆ˜ì— ì´ˆê¸°ê°’ 0 ëŒ€ì…
+			kopo11_iB = 0;	// iB º¯¼ö¿¡ ÃÊ±â°ª 0 ´ëÀÔ
 			
-			while(true) {	// true ì¼ë•Œ ë°˜ë³µìœ¼ë¡œ ë„ëŠ” whileë¬¸
+			while(true) {	// true ÀÏ¶§ ¹İº¹À¸·Î µµ´Â while¹®
 				
-				System.out.printf("*");		// ë³„í•˜ë‚˜ì”©ì°ê¸°
+				System.out.printf("*");		// º°ÇÏ³ª¾¿Âï±â
 				
-				if(kopo11_iA == kopo11_iB) break;	// iA ì™€ iBê°€ ê°™ìœ¼ë©´ break;
+				if(kopo11_iA == kopo11_iB) break;	// iA ¿Í iB°¡ °°À¸¸é break;
 				
-				kopo11_iB++;	// iBì— 1ì„ í•˜ë‚˜ ë”í•´ì¤€ë‹¤
+				kopo11_iB++;	// iB¿¡ 1À» ÇÏ³ª ´õÇØÁØ´Ù
 			}
 			
-			System.out.println("\n"); 	// ê°œí–‰
+			System.out.println("\n"); 	// °³Çà
 			
-			kopo11_iA++;	// iAì— 1ì„ í•˜ë‚˜ ë”í•´ì¤€ë‹¤.
+			kopo11_iA++;	// iA¿¡ 1À» ÇÏ³ª ´õÇØÁØ´Ù.
 			
-			if(kopo11_iA == 30) break;	// iAê°€ 30ì´ë©´ break;
+			if(kopo11_iA == 30) break;	// iA°¡ 30ÀÌ¸é break;
 		}
 	}
 

@@ -3,56 +3,56 @@ package java2_0321;
 public class If_else {
 	public static void main(String[] args) {
 
-		int kopo11_iI; // int íƒ€ì… ë³€ìˆ˜ ì„ ì–¸
-		double kopo11_iD; // double íƒ€ì… ë³€ìˆ˜ ì„ ì–¸
+		int kopo11_iI; // int Å¸ÀÔ º¯¼ö ¼±¾ğ
+		double kopo11_iD; // double Å¸ÀÔ º¯¼ö ¼±¾ğ
 
-		kopo11_iI = 10 / 3; // int ê°’ìœ¼ë¡œ ì†Œìˆ«ì  ë²„ë¦¬ê³  3 ì €ì¥
-		kopo11_iD = 10 / 3.0; // double ê°’ìœ¼ë¡œ 3.33333... ì €ì¥
+		kopo11_iI = 10 / 3; // int °ªÀ¸·Î ¼Ò¼ıÁ¡ ¹ö¸®°í 3 ÀúÀå
+		kopo11_iD = 10 / 3.0; // double °ªÀ¸·Î 3.33333... ÀúÀå
 
 		if (kopo11_iI == kopo11_iD)
-			System.out.printf("equal\n"); // iI ì™€ iDê°€ ê°™ìœ¼ë©´ "equal" ì¶œë ¥
+			System.out.printf("equal\n"); // iI ¿Í iD°¡ °°À¸¸é "equal" Ãâ·Â
 		
-		// ê·¸ ì™¸ "Not equal" double í˜•ë³€í™˜í•œ ê°’ 3.00000...ê³¼ 3.333333....ì¶œë ¥
+		// ±× ¿Ü "Not equal" double Çüº¯È¯ÇÑ °ª 3.00000...°ú 3.333333....Ãâ·Â
 		else
 			System.out.printf("Not equal[%f][%f]\n", (double) kopo11_iI, kopo11_iD);
 
 		if (kopo11_iI == 3.333333)
-			System.out.printf("equal\n"); // iIê°€ 3.333333ê³¼ ê°™ìœ¼ë©´ "equal" ì¶œë ¥
+			System.out.printf("equal\n"); // iI°¡ 3.333333°ú °°À¸¸é "equal" Ãâ·Â
 		else
-			System.out.printf("Not equal[3.333333][%f]\n", kopo11_iD); // ì•„ë‹ˆë©´ "Not equal" ì¶œë ¥
+			System.out.printf("Not equal[3.333333][%f]\n", kopo11_iD); // ¾Æ´Ï¸é "Not equal" Ãâ·Â
 
-		kopo11_iD = (int) kopo11_iD; // iD ë³€ìˆ˜ì— (int) í˜•ë³€í™˜í•˜ì—¬ ì†Œìˆ«ì  ë²„ë¦° 3.000000 ì €ì¥
+		kopo11_iD = (int) kopo11_iD; // iD º¯¼ö¿¡ (int) Çüº¯È¯ÇÏ¿© ¼Ò¼ıÁ¡ ¹ö¸° 3.000000 ÀúÀå
 		
 		if (kopo11_iI == kopo11_iD)
-			System.out.printf("equal\n"); // iI ì™€ iDê°€ ê°™ìœ¼ë©´ "equal" ì¶œë ¥
+			System.out.printf("equal\n"); // iI ¿Í iD°¡ °°À¸¸é "equal" Ãâ·Â
 		else
-			System.out.printf("Not equal[%f][%f]\n", (double) kopo11_iI, kopo11_iD); // ê·¸ ì™¸ "Not equal" ì¶œë ¥
+			System.out.printf("Not equal[%f][%f]\n", (double) kopo11_iI, kopo11_iD); // ±× ¿Ü "Not equal" Ãâ·Â
 
-		System.out.printf("intë¡œ ì¸ì‡„[%d][%f]\n", kopo11_iI, kopo11_iD);	// iIëŠ” ì •ìˆ˜í˜•ìœ¼ë¡œ, iDëŠ” ì†Œìˆ«ì ìœ¼ë¡œ ì¶œë ¥
-		System.out.printf("doubleë¡œ ì¸ì‡„[%f][%f]\n", (double) kopo11_iI, kopo11_iD);	// ë‘˜ë‹¤ ì†Œìˆ«ì ìœ¼ë¡œ ì¶œë ¥
+		System.out.printf("int·Î ÀÎ¼â[%d][%f]\n", kopo11_iI, kopo11_iD);	// iI´Â Á¤¼öÇüÀ¸·Î, iD´Â ¼Ò¼ıÁ¡À¸·Î Ãâ·Â
+		System.out.printf("double·Î ÀÎ¼â[%f][%f]\n", (double) kopo11_iI, kopo11_iD);	// µÑ´Ù ¼Ò¼ıÁ¡À¸·Î Ãâ·Â
 
-		char kopo11_a = 'c';	// char íƒ€ì… ë³€ìˆ˜ 'c' ì´ˆê¸°ê°’ ì„ ì–¸
+		char kopo11_a = 'c';	// char Å¸ÀÔ º¯¼ö 'c' ÃÊ±â°ª ¼±¾ğ
 
-		if (kopo11_a == 'b')	// 'b'ë‘ ê°™ì„ë•Œ	ì¶œë ¥
-			System.out.printf("kopo11_aëŠ” bì´ë‹¤\n");
-		if (kopo11_a == 'c')	// 'c'ë‘ ê°™ì„ë•Œ ì¶œë ¥
-			System.out.printf("kopo11_aëŠ” cì´ë‹¤\n");
-		if (kopo11_a == 'd')	// 'd'ë‘ ê°™ì„ë•Œ ì¶œë ¥
-			System.out.printf("kopo11_aëŠ” dì´ë‹¤\n");
+		if (kopo11_a == 'b')	// 'b'¶û °°À»¶§	Ãâ·Â
+			System.out.printf("kopo11_a´Â bÀÌ´Ù\n");
+		if (kopo11_a == 'c')	// 'c'¶û °°À»¶§ Ãâ·Â
+			System.out.printf("kopo11_a´Â cÀÌ´Ù\n");
+		if (kopo11_a == 'd')	// 'd'¶û °°À»¶§ Ãâ·Â
+			System.out.printf("kopo11_a´Â dÀÌ´Ù\n");
 
-		String kopo11_aa = "abcd";	// String íƒ€ì… ë¬¸ìì—´ "abcd" ì´ˆê¸°ê°’ ì„ ì–¸
+		String kopo11_aa = "abcd";	// String Å¸ÀÔ ¹®ÀÚ¿­ "abcd" ÃÊ±â°ª ¼±¾ğ
 
-		if (kopo11_aa.equals("abcd"))	// "abcd"'ë‘ ê°™ì„ë•Œ	ì¶œë ¥
-			System.out.printf("kopo11_aaëŠ” abcdì´ë‹¤\n");
-		else	// "abcd"'ë‘ ê°™ì§€ ì•Šì„ë•Œ	ì¶œë ¥
-			System.out.printf("kopo11_aaëŠ” abcdì´ ì•„ë‹ˆë‹¤\n");
+		if (kopo11_aa.equals("abcd"))	// "abcd"'¶û °°À»¶§	Ãâ·Â
+			System.out.printf("kopo11_aa´Â abcdÀÌ´Ù\n");
+		else	// "abcd"'¶û °°Áö ¾ÊÀ»¶§	Ãâ·Â
+			System.out.printf("kopo11_aa´Â abcdÀÌ ¾Æ´Ï´Ù\n");
 
-		boolean kopo11_bb = true;	// boolean íƒ€ì… true ì´ˆê¸°ê°’ ì„ ì–¸
+		boolean kopo11_bb = true;	// boolean Å¸ÀÔ true ÃÊ±â°ª ¼±¾ğ
 
-		if (!!kopo11_bb)	// trueë¥¼ ë‘ë²ˆ ë¶€ì • -> ì°¸
-			System.out.printf("kopo11_bbê°€ ì•„ë‹ˆê³  ì•„ë‹ˆë©´ ì°¸ì´ë‹¤\n");
-		else	// ê·¸ ì™¸ 
-			System.out.printf("kopo11_bbê°€ ì•„ë‹ˆê³  ì•„ë‹ˆë©´ ê±°ì§“ì´ë‹¤\n");
+		if (!!kopo11_bb)	// true¸¦ µÎ¹ø ºÎÁ¤ -> Âü
+			System.out.printf("kopo11_bb°¡ ¾Æ´Ï°í ¾Æ´Ï¸é ÂüÀÌ´Ù\n");
+		else	// ±× ¿Ü 
+			System.out.printf("kopo11_bb°¡ ¾Æ´Ï°í ¾Æ´Ï¸é °ÅÁşÀÌ´Ù\n");
 
 	}
 }

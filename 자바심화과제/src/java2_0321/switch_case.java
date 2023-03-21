@@ -4,23 +4,23 @@ public class switch_case {
 
 	public static void main(String[] args) {
 
-		String kopo11_jumin = "123456-1234567"; // String íƒ€ì… "123456-1234567" ì´ˆê¸°ê°’ ì„ ì–¸
+		String kopo11_jumin = "123456-1234567"; // String Å¸ÀÔ "123456-1234567" ÃÊ±â°ª ¼±¾ğ
 
-		switch (kopo11_jumin.charAt(7)) { // kopo11_jumin 7ë²ˆì§¸ ë¬¸ìë¥¼ charíƒ€ì…ìœ¼ë¡œ ê°€ì ¸ì˜¨ë‹¤.
-		case '1': // charíƒ€ì… '1'ì¼ë•Œ
-			System.out.printf("20ì„¸ê¸°ì „ íƒœì–´ë‚œ ë‚¨ì ì‚¬ëŒ\n"); // breakê°€ ì—†ì–´ì„œ breakê°€ ë‚˜ì˜¬ë•Œê¹Œì§€ í˜ëŸ¬ê°„ë‹¤.
-		case '2': // charíƒ€ì… '2'ì¼ë•Œ
-			System.out.printf("20ì„¸ê¸°ì „ íƒœì–´ë‚œ ì—¬ì ì‚¬ëŒ\n");
-			break; // switchë¬¸ì„ ì—¬ê¸°ì„œ ë©ˆì¶˜ë‹¤.
-		case '3': // charíƒ€ì… '3'ì¼ë•Œ
-			System.out.printf("20ì„¸ê¸°í›„ íƒœì–´ë‚œ ë‚¨ì ì‚¬ëŒ\n");
-			break; // switchë¬¸ì„ ì—¬ê¸°ì„œ ë©ˆì¶˜ë‹¤.
-		case '4': // charíƒ€ì… '4'ì¼ë•Œ
-			System.out.printf("20ì„¸ê¸°í›„ íƒœì–´ë‚œ ì—¬ì ì‚¬ëŒ\n");
-			break; // switchë¬¸ì„ ì—¬ê¸°ì„œ ë©ˆì¶˜ë‹¤.
-		default: // ê·¸ ì™¸
-			System.out.printf("ì‚¬ëŒ\n");
-			break; // switchë¬¸ì„ ì—¬ê¸°ì„œ ë©ˆì¶˜ë‹¤.
+		switch (kopo11_jumin.charAt(7)) { // kopo11_jumin 7¹øÂ° ¹®ÀÚ¸¦ charÅ¸ÀÔÀ¸·Î °¡Á®¿Â´Ù.
+		case '1': // charÅ¸ÀÔ '1'ÀÏ¶§
+			System.out.printf("20¼¼±âÀü ÅÂ¾î³­ ³²ÀÚ »ç¶÷\n"); // break°¡ ¾ø¾î¼­ break°¡ ³ª¿Ã¶§±îÁö Èê·¯°£´Ù.
+		case '2': // charÅ¸ÀÔ '2'ÀÏ¶§
+			System.out.printf("20¼¼±âÀü ÅÂ¾î³­ ¿©ÀÚ »ç¶÷\n");
+			break; // switch¹®À» ¿©±â¼­ ¸ØÃá´Ù.
+		case '3': // charÅ¸ÀÔ '3'ÀÏ¶§
+			System.out.printf("20¼¼±âÈÄ ÅÂ¾î³­ ³²ÀÚ »ç¶÷\n");
+			break; // switch¹®À» ¿©±â¼­ ¸ØÃá´Ù.
+		case '4': // charÅ¸ÀÔ '4'ÀÏ¶§
+			System.out.printf("20¼¼±âÈÄ ÅÂ¾î³­ ¿©ÀÚ »ç¶÷\n");
+			break; // switch¹®À» ¿©±â¼­ ¸ØÃá´Ù.
+		default: // ±× ¿Ü
+			System.out.printf("»ç¶÷\n");
+			break; // switch¹®À» ¿©±â¼­ ¸ØÃá´Ù.
 		}
 	}
 

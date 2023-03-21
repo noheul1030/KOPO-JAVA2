@@ -3,13 +3,13 @@ package java2_0320;
 public class CastingEx3 {
 
 	public static void main(String[] args) {
-		float kopo11_f = 9.1234567f;	// float íƒ€ì… 9.1234567f ì´ˆê¸°ê°’ ì„ ì–¸
-		double kopo11_d = 9.1234567;	// double íƒ€ì… 9.1234567f ì´ˆê¸°ê°’ ì„ ì–¸
-		double kopo11_d2 = (double)kopo11_f;	// floatë¥¼ double íƒ€ì…ìœ¼ë¡œ í˜• ë³€í™˜ ëŒ€ì…
+		float kopo11_f = 9.1234567f;	// float Å¸ÀÔ 9.1234567f ÃÊ±â°ª ¼±¾ğ
+		double kopo11_d = 9.1234567;	// double Å¸ÀÔ 9.1234567f ÃÊ±â°ª ¼±¾ğ
+		double kopo11_d2 = (double)kopo11_f;	// float¸¦ double Å¸ÀÔÀ¸·Î Çü º¯È¯ ´ëÀÔ
 		
-		// %20.18f = ì†Œìˆ«ì  ì´í•˜ ìµœëŒ€ 18ìë¦¬ì˜ float í˜•íƒœë¡œ ì¶œë ¥
-		// floatëŠ” ì •ë°€ë„ê°€ 7ì´ì—¬ì„œ 7ìë¦¬ê¹Œì§€ ì •í™• ë’¤ì˜ ìˆ«ìëŠ” ì˜ë¯¸ì—†ëŠ” ìˆ«ì
-		// doubleì€ ì •ë°€ë„ê°€ 15 ë”°ë¼ì„œ 15ìë¦¬ê¹Œì§€ ì •í™•! 
+		// %20.18f = ¼Ò¼ıÁ¡ ÀÌÇÏ ÃÖ´ë 18ÀÚ¸®ÀÇ float ÇüÅÂ·Î Ãâ·Â
+		// float´Â Á¤¹Ğµµ°¡ 7ÀÌ¿©¼­ 7ÀÚ¸®±îÁö Á¤È® µÚÀÇ ¼ıÀÚ´Â ÀÇ¹Ì¾ø´Â ¼ıÀÚ
+		// doubleÀº Á¤¹Ğµµ°¡ 15 µû¶ó¼­ 15ÀÚ¸®±îÁö Á¤È®! 
 		System.out.printf("kopo11_f = %20.18f\n", kopo11_f);	
 		System.out.printf("kopo11_d = %20.18f\n", kopo11_d);
 		System.out.printf("kopo11_d2 = %20.18f\n", kopo11_d2);

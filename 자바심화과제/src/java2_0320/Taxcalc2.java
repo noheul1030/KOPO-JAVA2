@@ -3,27 +3,27 @@ package java2_0320;
 public class Taxcalc2 {
 
 	public static void main(String[] args) {
-		int kopo11_price = 1234; // intí˜• price ë³€ìˆ˜ì— 1234 ì´ˆê¸°ê°’ ì„ ì–¸
-		double kopo11_tax_rate = 0.1; // doubleí˜• tax_rate ë³€ìˆ˜ì— 0.1 ì´ˆê¸°ê°’ ì„ ì–¸
+		int kopo11_price = 1234; // intÇü price º¯¼ö¿¡ 1234 ÃÊ±â°ª ¼±¾ğ
+		double kopo11_tax_rate = 0.1; // doubleÇü tax_rate º¯¼ö¿¡ 0.1 ÃÊ±â°ª ¼±¾ğ
 
-		// intí˜• ë³€ìˆ˜ì— netpriceë©”ì„œë“œì— íŒŒë¼ë¯¸í„°ë¡œ (int kopo11_price, double kopo11_tax_rate) ì „ë‹¬í•˜ê³  
-		// ê²°ê³¼ê°’ return ë°›ê¸°
+		// intÇü º¯¼ö¿¡ netprice¸Ş¼­µå¿¡ ÆÄ¶ó¹ÌÅÍ·Î (int kopo11_price, double kopo11_tax_rate) Àü´ŞÇÏ°í 
+		// °á°ú°ª return ¹Ş±â
 		int kopo11_netprice = netprice(kopo11_price, kopo11_tax_rate); 
 		
 		// kopo11_tax = 1234-1121
 		int kopo11_tax = kopo11_price - kopo11_netprice;
 
-		System.out.printf("***********************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("*       ì†Œë¹„ìê°€ê²©, ì„¸ì „ê°€ê²©, ì„¸ê¸ˆ ê³„ì‚°      *\n");	// ì†Œë¹„ìê°€ê²©, ì„¸ì „ê°€ê²©, ì„¸ê¸ˆ ê³„ì‚° ê°œí–‰
-		// ì†Œë¹„ìê°€ê²©: kopo11_price, ì„¸ì „ê°€ê²©:  kopo11_netprice, ì„¸ê¸ˆ ê³„ì‚°: kopo11_tax ì¶œë ¥
-		System.out.printf("ì†Œë¹„ìê°€ê²©: %d, ì„¸ì „ê°€ê²©: %d, ì„¸ê¸ˆ ê³„ì‚°:%d\n", kopo11_price, kopo11_netprice, kopo11_tax);
-		System.out.printf("***********************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
+		System.out.printf("***********************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("*       ¼ÒºñÀÚ°¡°İ, ¼¼Àü°¡°İ, ¼¼±İ °è»ê      *\n");	// ¼ÒºñÀÚ°¡°İ, ¼¼Àü°¡°İ, ¼¼±İ °è»ê °³Çà
+		// ¼ÒºñÀÚ°¡°İ: kopo11_price, ¼¼Àü°¡°İ:  kopo11_netprice, ¼¼±İ °è»ê: kopo11_tax Ãâ·Â
+		System.out.printf("¼ÒºñÀÚ°¡°İ: %d, ¼¼Àü°¡°İ: %d, ¼¼±İ °è»ê:%d\n", kopo11_price, kopo11_netprice, kopo11_tax);
+		System.out.printf("***********************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
 
 	}
 	
-	// íŒŒë¼ë¯¸í„°ë¡œ (int kopo11_price, double kopo11_tax_rate)ê°’ ë°›ìŒ
+	// ÆÄ¶ó¹ÌÅÍ·Î (int kopo11_price, double kopo11_tax_rate)°ª ¹ŞÀ½
 	public static int netprice(int kopo11_price, double kopo11_tax_rate) {	
-		return (int) (kopo11_price / (1 + kopo11_tax_rate));	// 1121 ê°’ ë¦¬í„´ (int)í˜• ì£¼ì˜!
+		return (int) (kopo11_price / (1 + kopo11_tax_rate));	// 1121 °ª ¸®ÅÏ (int)Çü ÁÖÀÇ!
 	}
 
 }

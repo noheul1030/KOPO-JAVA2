@@ -4,29 +4,29 @@ public class PrintfEx1 {
 
 	public static void main(String[] args) {
 
-		byte kopo11_b = 1;	// byte íƒ€ì… ë³€ìˆ˜ 1 ì´ˆê¸°ê°’ ì„ ì–¸
-		short kopo11_s = 2;	// short íƒ€ì… ë³€ìˆ˜ 2 ì´ˆê¸°ê°’ ì„ ì–¸
-		char kopo11_c = 'A';	// char íƒ€ì… ë³€ìˆ˜ 'A' ì´ˆê¸°ê°’ ì„ ì–¸
+		byte kopo11_b = 1;	// byte Å¸ÀÔ º¯¼ö 1 ÃÊ±â°ª ¼±¾ğ
+		short kopo11_s = 2;	// short Å¸ÀÔ º¯¼ö 2 ÃÊ±â°ª ¼±¾ğ
+		char kopo11_c = 'A';	// char Å¸ÀÔ º¯¼ö 'A' ÃÊ±â°ª ¼±¾ğ
 
-		int finger = 10;	// int íƒ€ì… ë³€ìˆ˜ 10 ì´ˆê¸°ê°’ ì„ ì–¸
-		long big = 1000000000000L;	// long íƒ€ì… ë³€ìˆ˜ 1000000000000L ì´ˆê¸°ê°’ ì„ ì–¸
+		int finger = 10;	// int Å¸ÀÔ º¯¼ö 10 ÃÊ±â°ª ¼±¾ğ
+		long big = 1000000000000L;	// long Å¸ÀÔ º¯¼ö 1000000000000L ÃÊ±â°ª ¼±¾ğ
 		long hex = 0xFFFFFFFFFFFFFFFFL; // long hex = 0xFFFFFFFFFFFFFFFFL;
 
-		int octNum = 010; // 8ì§„ìˆ˜ 10, 10ì§„ìˆ˜ë¡œëŠ” 8
-		int hexNum = 0x10; // 16ì§„ìˆ˜ 10, 10 ì§„ìˆ˜ë¡œëŠ” 16
-		int binNum = 0b10; // 2ì§„ìˆ˜ 10, 10ì§„ìˆ˜ë¡œëŠ” 2
+		int octNum = 010; // 8Áø¼ö 10, 10Áø¼ö·Î´Â 8
+		int hexNum = 0x10; // 16Áø¼ö 10, 10 Áø¼ö·Î´Â 16
+		int binNum = 0b10; // 2Áø¼ö 10, 10Áø¼ö·Î´Â 2
 
 		System.out.printf("b = %d%n", kopo11_b);	// b = 1
 		System.out.printf("s = %d%n", kopo11_s);	// s = 2
-		System.out.printf("c = %c, %d %n", kopo11_c, (int) kopo11_c);	// c = A, (int)í˜•ë³€í™˜ 65 ì¶œë ¥
-		System.out.printf("finget = [%5d]%n", finger);	// 5ë§Œí¼ ì¶œë ¥í•  ìµœëŒ€ ìë¦¿ìˆ˜ ì§€ì •í•˜ê³  ì˜¤ë¥¸ìª½ ì •ë ¬, ë‚¨ì€ìë¦¬ëŠ” ê³µë°±
-		System.out.printf("finget = [%-5d]%n", finger);	// 5ë§Œí¼ ì¶œë ¥í•  ìµœëŒ€ ìë¦¿ìˆ˜ ì§€ì •í•˜ê³  ì™¼ìª½ ì •ë ¬, ë‚¨ì€ìë¦¬ëŠ” ê³µë°±
-		System.out.printf("finget = [%05d]%n", finger);	// ì§€ì •ëœ ìë¦¿ìˆ˜ ì¶œë ¥í•˜ê³  ë‚¨ëŠ” ìë¦¬ëŠ” ê³µë°±ëŒ€ì‹  0 ì¶œë ¥
+		System.out.printf("c = %c, %d %n", kopo11_c, (int) kopo11_c);	// c = A, (int)Çüº¯È¯ 65 Ãâ·Â
+		System.out.printf("finget = [%5d]%n", finger);	// 5¸¸Å­ Ãâ·ÂÇÒ ÃÖ´ë ÀÚ¸´¼ö ÁöÁ¤ÇÏ°í ¿À¸¥ÂÊ Á¤·Ä, ³²ÀºÀÚ¸®´Â °ø¹é
+		System.out.printf("finget = [%-5d]%n", finger);	// 5¸¸Å­ Ãâ·ÂÇÒ ÃÖ´ë ÀÚ¸´¼ö ÁöÁ¤ÇÏ°í ¿ŞÂÊ Á¤·Ä, ³²ÀºÀÚ¸®´Â °ø¹é
+		System.out.printf("finget = [%05d]%n", finger);	// ÁöÁ¤µÈ ÀÚ¸´¼ö Ãâ·ÂÇÏ°í ³²´Â ÀÚ¸®´Â °ø¹é´ë½Å 0 Ãâ·Â
 		System.out.printf("big = %d%n", big);	// big = 1000000000000
-		System.out.printf("hex = %#x%n", hex);	// hex = 0xFFFFFFFFFFFFFFFF (%x - 16ì§„ í˜•íƒœë¡œ ì¶œë ¥)
-		System.out.printf("octNum = %o, %d%n", octNum, octNum);	// 8ì§„ìˆ˜ 10, 10ì§„ìˆ˜ë¡œëŠ” 8 (%o - 8ì§„í˜•íƒœë¡œ ì¶œë ¥)
-		System.out.printf("hexNum = %o, %d%n", hexNum, hexNum);	// 16ì§„ìˆ˜ 10, 10 ì§„ìˆ˜ë¡œëŠ” 16
-		System.out.printf("binNum = %s, %d%n", Integer.toBinaryString(binNum), binNum);	// 2ì§„ìˆ˜ 10, 10ì§„ìˆ˜ë¡œëŠ” 2
+		System.out.printf("hex = %#x%n", hex);	// hex = 0xFFFFFFFFFFFFFFFF (%x - 16Áø ÇüÅÂ·Î Ãâ·Â)
+		System.out.printf("octNum = %o, %d%n", octNum, octNum);	// 8Áø¼ö 10, 10Áø¼ö·Î´Â 8 (%o - 8ÁøÇüÅÂ·Î Ãâ·Â)
+		System.out.printf("hexNum = %o, %d%n", hexNum, hexNum);	// 16Áø¼ö 10, 10 Áø¼ö·Î´Â 16
+		System.out.printf("binNum = %s, %d%n", Integer.toBinaryString(binNum), binNum);	// 2Áø¼ö 10, 10Áø¼ö·Î´Â 2
 	
 	}
 

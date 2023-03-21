@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class ScannerEx {
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner (System.in);	// Scanner ê°ì²´ ìƒì„±-> import
+		Scanner scanner = new Scanner (System.in);	// Scanner °´Ã¼ »ı¼º-> import
 		
-		System.out.println("ë‘ìë¦¬ ì •ìˆ˜ë¥¼ í•˜ë‚˜ ì…ë ¥í•´ì£¼ì„¸ìš”. >> ");	// ìŠ¤ìºë„ˆ ì…ë ¥ ì•ˆë‚´ë¬¸êµ¬ ì¶œë ¥
+		System.out.println("µÎÀÚ¸® Á¤¼ö¸¦ ÇÏ³ª ÀÔ·ÂÇØÁÖ¼¼¿ä. >> ");	// ½ºÄ³³Ê ÀÔ·Â ¾È³»¹®±¸ Ãâ·Â
 		
-		String input = scanner.nextLine();	// String íƒ€ì…ì„ ì…ë ¥ë°›ëŠ” ë³€ìˆ˜ì™€ ë¬¸ìì—´ì„ ì…ë ¥ë°›ëŠ” nextLine() í•¨ìˆ˜ ì‚¬ìš©
-		int kopo11_num = Integer.parseInt(input);	// Scannerë¡œ ë°›ì€ Strign íƒ€ì… Input ë³€ìˆ˜ë¥¼ intë¡œ í˜•ë³€í™˜ 
+		String input = scanner.nextLine();	// String Å¸ÀÔÀ» ÀÔ·Â¹Ş´Â º¯¼ö¿Í ¹®ÀÚ¿­À» ÀÔ·Â¹Ş´Â nextLine() ÇÔ¼ö »ç¿ë
+		int kopo11_num = Integer.parseInt(input);	// Scanner·Î ¹ŞÀº Strign Å¸ÀÔ Input º¯¼ö¸¦ int·Î Çüº¯È¯ 
 		
-		System.out.println("ì…ë ¥ë‚´ìš© : " + input);	// String íƒ€ì…ì˜ input ê°’ ì¶œë ¥
-		System.out.printf("kopo11_num = %d%n",kopo11_num);	// int íƒ€ì…ì˜ kopo11_num ê°’ ì¶œë ¥ 
+		System.out.println("ÀÔ·Â³»¿ë : " + input);	// String Å¸ÀÔÀÇ input °ª Ãâ·Â
+		System.out.printf("kopo11_num = %d%n",kopo11_num);	// int Å¸ÀÔÀÇ kopo11_num °ª Ãâ·Â 
 
 	}
 

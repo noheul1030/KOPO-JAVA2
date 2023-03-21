@@ -3,11 +3,11 @@ package java2_0320;
 public class CastingEx1 {
 
 	public static void main(String[] args) {
-		double kopo11_d = 85.4;		// double íƒ€ì…ì˜ 85.4 ì„ ì–¸
-		int kopo11_score = (int)kopo11_d;	// intë¡œ í˜• ë³€í™˜í•˜ì—¬ ì†Œìˆ˜ì  ì œì™¸í•œ 85 ëŒ€ì…
+		double kopo11_d = 85.4;		// double Å¸ÀÔÀÇ 85.4 ¼±¾ğ
+		int kopo11_score = (int)kopo11_d;	// int·Î Çü º¯È¯ÇÏ¿© ¼Ò¼öÁ¡ Á¦¿ÜÇÑ 85 ´ëÀÔ
 		
-		System.out.println("kopo11_score = "+ kopo11_score);	// 85 ì¶œë ¥
-		System.out.println("kopo11_d = "+ kopo11_d);	// 85.4	ì¶œë ¥
+		System.out.println("kopo11_score = "+ kopo11_score);	// 85 Ãâ·Â
+		System.out.println("kopo11_d = "+ kopo11_d);	// 85.4	Ãâ·Â
 
 	}
 

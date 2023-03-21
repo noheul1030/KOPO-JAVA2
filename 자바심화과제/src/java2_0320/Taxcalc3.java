@@ -4,36 +4,36 @@ public class Taxcalc3 {
 
 	public static void main(String[] args) {
 
-		String[] kopo11_item = { "ë§›ë™ì‚°", "ì›¨í•˜ìŠ¤", "ë¡¯ë°ìƒŒë“œ", "ì˜¤ë•…", "ì‚¬ë¸Œë ˆ" }; // String íƒ€ì… ê³¼ìì´ë¦„ ë°°ì—´ ì„ ì–¸
-		int[] kopo11_price = { 1000, 2000, 3000, 2500, 1450 }; // ìƒí’ˆê°€ê²© ì„ ì–¸
-		int[] kopo11_amount = { 10, 2, 1, 3, 5 }; // ê³¼ì ê°¯ìˆ˜ ì„ ì–¸
-		double tax_rate = 0.1; // ì„¸ê¸ˆ
-		int total_sum = 0; // intí˜• ì´ˆê¸°ê°’ 0 ì„ ì–¸
+		String[] kopo11_item = { "¸Àµ¿»ê", "¿şÇÏ½º", "·Ôµ¥»÷µå", "¿À¶¥", "»çºê·¹" }; // String Å¸ÀÔ °úÀÚÀÌ¸§ ¹è¿­ ¼±¾ğ
+		int[] kopo11_price = { 1000, 2000, 3000, 2500, 1450 }; // »óÇ°°¡°İ ¼±¾ğ
+		int[] kopo11_amount = { 10, 2, 1, 3, 5 }; // °úÀÚ °¹¼ö ¼±¾ğ
+		double tax_rate = 0.1; // ¼¼±İ
+		int total_sum = 0; // intÇü ÃÊ±â°ª 0 ¼±¾ğ
 
-		System.out.printf("*******************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("                ë‚´ê°€ ì‚° ê³¼ìë“¤              \n");	// ë‚´ê°€ ì‚° ê³¼ìë“¤ ì¶œë ¥ ê°œí–‰
-		System.out.printf(" í•­ëª©		ë‹¨ê°€		ìˆ˜ëŸ‰		í•©ê³„ 	\n");	// í•­ëª© ë‹¨ê°€ ìˆ˜ëŸ‰ í•©ê³„ ì¶œë ¥ ê°œí–‰
+		System.out.printf("*******************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("                ³»°¡ »ê °úÀÚµé              \n");	// ³»°¡ »ê °úÀÚµé Ãâ·Â °³Çà
+		System.out.printf(" Ç×¸ñ		´Ü°¡		¼ö·®		ÇÕ°è 	\n");	// Ç×¸ñ ´Ü°¡ ¼ö·® ÇÕ°è Ãâ·Â °³Çà
 
-		for (int i = 0; i < kopo11_item.length; i++) { // ê³¼ìì¢…ë¥˜ ë§Œí¼ ë°˜ë³µë¬¸ ì‹¤í–‰
-			int sum = kopo11_price[i] * kopo11_amount[i]; // ê³¼ì ê°€ê²©[i] * ê³¼ì ê°¯ìˆ˜[i]
-			total_sum = total_sum + sum; // ëˆ„ì  (ê³¼ì ê°€ê²©[i] * ê³¼ì ê°¯ìˆ˜[i]) ë”í•˜ê¸°
+		for (int i = 0; i < kopo11_item.length; i++) { // °úÀÚÁ¾·ù ¸¸Å­ ¹İº¹¹® ½ÇÇà
+			int sum = kopo11_price[i] * kopo11_amount[i]; // °úÀÚ °¡°İ[i] * °úÀÚ °¹¼ö[i]
+			total_sum = total_sum + sum; // ´©Àû (°úÀÚ °¡°İ[i] * °úÀÚ °¹¼ö[i]) ´õÇÏ±â
 
-			if (i == 2) { // i == 2ì´ë©´ íƒ­ í•œë²ˆë§Œ ì°ê¸°
+			if (i == 2) { // i == 2ÀÌ¸é ÅÇ ÇÑ¹ø¸¸ Âï±â
 				System.out.printf("%s	%d		%d		%d\n", kopo11_item[i], kopo11_price[i], kopo11_amount[i], sum);
-			} else { // ì•„ë‹ˆë©´ íƒ­ ë‘ë²ˆ ì°ê¸°
+			} else { // ¾Æ´Ï¸é ÅÇ µÎ¹ø Âï±â
 				System.out.printf("%s		%d		%d		%d\n", kopo11_item[i], kopo11_price[i], kopo11_amount[i],
 						sum);
 
 			}
 		}
 
-		System.out.printf("*******************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf(" ì§€ë¶ˆ ê¸ˆì•¡ : 	%20d\n", total_sum); // %20d ->ìµœëŒ€ 20ê¹Œì§€,ëˆ„ì ëœ total_sum ì¶œë ¥
+		System.out.printf("*******************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf(" ÁöºÒ ±İ¾× : 	%20d\n", total_sum); // %20d ->ÃÖ´ë 20±îÁö,´©ÀûµÈ total_sum Ãâ·Â
 
-		int total_net_price = (int) (total_sum / (1 + tax_rate)); // ëˆ„ì ëœ ê³¼ìê°’ / 1.1
-		System.out.printf(" ê³¼ì„¸ ê¸ˆì•¡ :	%20d\n", total_net_price);	// %20d ->ìµœëŒ€ 20ê¹Œì§€, ê³¼ì„¸ê¸ˆì•¡ : total_net_price
-		int tax = total_sum - total_net_price; // ì„¸ê¸ˆ = ëˆ„ì ëœ ê³¼ìê°’- ê³¼ì„¸ê¸ˆì•¡
-		System.out.printf(" ì„¸	ê¸ˆ : 	%20d\n", tax);	// %20d ->ìµœëŒ€ 20ê¹Œì§€,ì„¸ ê¸ˆ : tax
+		int total_net_price = (int) (total_sum / (1 + tax_rate)); // ´©ÀûµÈ °úÀÚ°ª / 1.1
+		System.out.printf(" °ú¼¼ ±İ¾× :	%20d\n", total_net_price);	// %20d ->ÃÖ´ë 20±îÁö, °ú¼¼±İ¾× : total_net_price
+		int tax = total_sum - total_net_price; // ¼¼±İ = ´©ÀûµÈ °úÀÚ°ª- °ú¼¼±İ¾×
+		System.out.printf(" ¼¼	±İ : 	%20d\n", tax);	// %20d ->ÃÖ´ë 20±îÁö,¼¼ ±İ : tax
 	}
 
 }

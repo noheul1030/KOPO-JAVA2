@@ -6,25 +6,25 @@ public class PrintfEx2 {
 		String url = "www.codechobo.com";
 
 		float kopo11_f1 = .10f; // 0.10 == 0.10, 1.0e-1 
-		float kopo11_f2 = 1e1f; // 10.0, 1.0e1, 1.0e+1		// eë‘ ë’¤ì— ìˆ«ìê°€ ë¶™ìœ¼ë©´ ìˆ«ìë§Œí¼ 0ì„ ë¶™ì—¬ì£¼ë‚˜ë³´ë‹¤
+		float kopo11_f2 = 1e1f; // 10.0, 1.0e1, 1.0e+1		// e¶û µÚ¿¡ ¼ıÀÚ°¡ ºÙÀ¸¸é ¼ıÀÚ¸¸Å­ 0À» ºÙ¿©ÁÖ³ªº¸´Ù
 		float kopo11_f3 = 3.14e3f;	// 3.14e3f == 3140.0f
-		double d = 1.23456789; // double íƒ€ì… ë³€ìˆ˜ì— 1.23456789 ì´ˆê¸°ê°’ ì„ ì–¸
+		double d = 1.23456789; // double Å¸ÀÔ º¯¼ö¿¡ 1.23456789 ÃÊ±â°ª ¼±¾ğ
 
-		// %f - ê³ ì • ì†Œìˆ˜ì  ì‹¤ìˆ˜ ì¶œë ¥ (float)
-		// %e - ë¶€ë™ ì†Œìˆ˜ì  ì‹¤ìˆ˜ ì¶œë ¥ (double)
-		// %g - ì†Œìˆ˜ì  ì´í•˜ ìë¦¬ìˆ˜ê°€ ê³ ì • ë˜ëŠ” ë¶€ë™ ì†Œìˆ˜ì ìœ¼ë¡œ ì¶œë ¥ (double)
+		// %f - °íÁ¤ ¼Ò¼öÁ¡ ½Ç¼ö Ãâ·Â (float)
+		// %e - ºÎµ¿ ¼Ò¼öÁ¡ ½Ç¼ö Ãâ·Â (double)
+		// %g - ¼Ò¼öÁ¡ ÀÌÇÏ ÀÚ¸®¼ö°¡ °íÁ¤ ¶Ç´Â ºÎµ¿ ¼Ò¼öÁ¡À¸·Î Ãâ·Â (double)
 		System.out.printf("kopo11_f1 = %f, %e, %g%n", kopo11_f1, kopo11_f1, kopo11_f1);
 		System.out.printf("kopo11_f2 = %f, %e, %g%n", kopo11_f2, kopo11_f2, kopo11_f2);
 		System.out.printf("kopo11_f3 = %f, %e, %g%n", kopo11_f3, kopo11_f3, kopo11_f3);
 		
-		System.out.printf("d = %f%n", d);	// float í˜•íƒœë¡œ ì†Œìˆ˜ì  6ìë¦¬ ê¹Œì§€ë§Œ ì¶œë ¥ 
-		System.out.printf("d = %14.10f%n", d);		// ì „ì²´ 14ìë¦¬ ì¤‘ ì†Œìˆ˜ì  10ìë¦¬
+		System.out.printf("d = %f%n", d);	// float ÇüÅÂ·Î ¼Ò¼öÁ¡ 6ÀÚ¸® ±îÁö¸¸ Ãâ·Â 
+		System.out.printf("d = %14.10f%n", d);		// ÀüÃ¼ 14ÀÚ¸® Áß ¼Ò¼öÁ¡ 10ÀÚ¸®
 		
-		System.out.printf("[12345678901234567890]%n");	// [12345678901234567890] ì¶œë ¥ í›„ ê°œí–‰
-		System.out.printf("[%s]%n",url);	// [www.codechobo.com] ì¶œë ¥ í›„ ê°œí–‰
-		System.out.printf("[%20s]%n",url);	// ìµœëŒ€ 20ìë¦¬ ì§€ì • í›„ ì˜¤ë¥¸ìª½ ì •ë ¬ ì¶œë ¥ í›„ ê°œí–‰
-		System.out.printf("[%-20s]%n",url);	// ìµœëŒ€ 20ìë¦¬ ì§€ì • í›„ ì™¼ìª½ ì •ë ¬ ì¶œë ¥ í›„ ê°œí–‰
-		System.out.printf("[%.8s]%n",url);	// ì™¼ìª½ì—ì„œ 8ê¸€ìë§Œ ì¶œë ¥
+		System.out.printf("[12345678901234567890]%n");	// [12345678901234567890] Ãâ·Â ÈÄ °³Çà
+		System.out.printf("[%s]%n",url);	// [www.codechobo.com] Ãâ·Â ÈÄ °³Çà
+		System.out.printf("[%20s]%n",url);	// ÃÖ´ë 20ÀÚ¸® ÁöÁ¤ ÈÄ ¿À¸¥ÂÊ Á¤·Ä Ãâ·Â ÈÄ °³Çà
+		System.out.printf("[%-20s]%n",url);	// ÃÖ´ë 20ÀÚ¸® ÁöÁ¤ ÈÄ ¿ŞÂÊ Á¤·Ä Ãâ·Â ÈÄ °³Çà
+		System.out.printf("[%.8s]%n",url);	// ¿ŞÂÊ¿¡¼­ 8±ÛÀÚ¸¸ Ãâ·Â
 	}
 
 }

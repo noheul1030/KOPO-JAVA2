@@ -4,17 +4,17 @@ public class VarEx1 {
 
 	public static void main(String[] args) {
 
-		int kopo_year = 0; // int ë³€ìˆ˜ year ì´ˆê¸°ê°’ 0 ì„ ì–¸
-		int kopo11_age = 14; // int ë³€ìˆ˜ age ì´ˆê¸°ê°’ 14 ì„ ì–¸
+		int kopo_year = 0; // int º¯¼ö year ÃÊ±â°ª 0 ¼±¾ğ
+		int kopo11_age = 14; // int º¯¼ö age ÃÊ±â°ª 14 ¼±¾ğ
 
-		System.out.println(kopo_year); // 0 ì¶œë ¥
-		System.out.println(kopo11_age);	// 14 ì¶œë ¥
+		System.out.println(kopo_year); // 0 Ãâ·Â
+		System.out.println(kopo11_age);	// 14 Ãâ·Â
 
-		kopo_year = kopo11_age + 2000;	// year ë³€ìˆ˜ì— 14 + 2000 ê°’ ëŒ€ì…
+		kopo_year = kopo11_age + 2000;	// year º¯¼ö¿¡ 14 + 2000 °ª ´ëÀÔ
 		kopo11_age = kopo11_age + 1;	// 14 + 1
 
-		System.out.println(kopo_year);	// 2014 ì¶œë ¥
-		System.out.println(kopo11_age);	// 15 ì¶œë ¥
+		System.out.println(kopo_year);	// 2014 Ãâ·Â
+		System.out.println(kopo11_age);	// 15 Ãâ·Â
 
 	}
 

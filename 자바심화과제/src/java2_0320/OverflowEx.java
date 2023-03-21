@@ -3,15 +3,15 @@ package java2_0320;
 public class OverflowEx {
 
 	public static void main(String[] args) {
-		short kopo11_sMin = -32768;	 // short -32768 ì´ˆê¸°ê°’ ì„ ì–¸
-		short kopo11_sMax = 32767;	// short 32767 ì´ˆê¸°ê°’ ì„ ì–¸
-		char kopo11_cMin = 0;	// char ì´ˆê¸°ê°’ 0 ì„ ì–¸
-		char kopo11_cMax = 65535;	// char ì´ˆê¸°ê°’ 65535 ì„ ì–¸
+		short kopo11_sMin = -32768;	 // short -32768 ÃÊ±â°ª ¼±¾ğ
+		short kopo11_sMax = 32767;	// short 32767 ÃÊ±â°ª ¼±¾ğ
+		char kopo11_cMin = 0;	// char ÃÊ±â°ª 0 ¼±¾ğ
+		char kopo11_cMax = 65535;	// char ÃÊ±â°ª 65535 ¼±¾ğ
 		
 		System.out.println("kopo11_sMin = " + kopo11_sMin);	// -32768
-		System.out.println("kopo11_sMin - 1 = " + (short)(kopo11_sMin-1));	// shortì˜ ìµœëŒ€ê°’ 32767 ì¶œë ¥
+		System.out.println("kopo11_sMin - 1 = " + (short)(kopo11_sMin-1));	// shortÀÇ ÃÖ´ë°ª 32767 Ãâ·Â
 		System.out.println("kopo11_sMax = " + kopo11_sMax);	// 32767
-		System.out.println("kopo11_sMax + 1 = " + (short)(kopo11_sMax+1)); // shortì˜ ìµœì†Œê°’ -32768 ì¶œë ¥
+		System.out.println("kopo11_sMax + 1 = " + (short)(kopo11_sMax+1)); // shortÀÇ ÃÖ¼Ò°ª -32768 Ãâ·Â
 		System.out.println("kopo11_cMin = " + (int)kopo11_cMin);		// 0
 		System.out.println("kopo11_cMin - 1 = " + (int)--kopo11_cMin);		// 65535
 		System.out.println("kopo11_cMax = " + (int)kopo11_cMax);	// 65535

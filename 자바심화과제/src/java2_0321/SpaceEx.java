@@ -4,14 +4,14 @@ public class SpaceEx {
 
 	public static void main(String[] args) {
 		//////////////////
-		// ë„ì–´ì“°ê¸° ì—°ìŠµ
+		// ¶ç¾î¾²±â ¿¬½À
 		// 
 		
-		for (int kopo11_i = 0; kopo11_i < 10; kopo11_i++) {		// 0 ~ 9ë²ˆ ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸ 
-			for (int kopo11_j = 0; kopo11_j < kopo11_i; kopo11_j++) { // 0 ~ kopo11_ië²ˆ ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸ 
-				System.out.printf(" ");	// kopo11_i ë²ˆ ë§Œí¼ ê³µë°±ì„ ì°ëŠ”ë‹¤.
+		for (int kopo11_i = 0; kopo11_i < 10; kopo11_i++) {		// 0 ~ 9¹ø ±îÁö µµ´Â ¹İº¹¹® 
+			for (int kopo11_j = 0; kopo11_j < kopo11_i; kopo11_j++) { // 0 ~ kopo11_i¹ø ±îÁö µµ´Â ¹İº¹¹® 
+				System.out.printf(" ");	// kopo11_i ¹ø ¸¸Å­ °ø¹éÀ» Âï´Â´Ù.
 			}
-			System.out.printf("%d\n",kopo11_i);	// kopo11_i ê°’ ì¶œë ¥ í›„ ê°œí–‰
+			System.out.printf("%d\n",kopo11_i);	// kopo11_i °ª Ãâ·Â ÈÄ °³Çà
 		}
 
 	}

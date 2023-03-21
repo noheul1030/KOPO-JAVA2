@@ -3,20 +3,20 @@ package java2_0320;
 public class CastingEx4 {
 
 	public static void main(String[] args) {
-		int kopo11_i = 91234567; // 8ìë¦¬ì˜ 10 ì§„ìˆ˜
-		float kopo11_f = (float) kopo11_i; // intë¥¼ floatë¡œ í˜•ë³€í™˜ -> 91234568.000000
-		int kopo11_i2 = (int) kopo11_f; // floatë¥¼ ë‹¤ì‹œ intë¡œ í˜•ë³€í™˜ -> 91234568
+		int kopo11_i = 91234567; // 8ÀÚ¸®ÀÇ 10 Áø¼ö
+		float kopo11_f = (float) kopo11_i; // int¸¦ float·Î Çüº¯È¯ -> 91234568.000000
+		int kopo11_i2 = (int) kopo11_f; // float¸¦ ´Ù½Ã int·Î Çüº¯È¯ -> 91234568
 
-		double kopo11_d = (double) kopo11_i; // intë¥¼ doubleë¡œ í˜•ë³€í™˜ -> 91234567.000000
-		int kopo11_i3 = (int) kopo11_d; // doubleì„ intë¡œ ë‹¤ì‹œ í˜•ë³€í™˜	-> 91234567
+		double kopo11_d = (double) kopo11_i; // int¸¦ double·Î Çüº¯È¯ -> 91234567.000000
+		int kopo11_i3 = (int) kopo11_d; // doubleÀ» int·Î ´Ù½Ã Çüº¯È¯	-> 91234567
 
-		float kopo11_f2 = 1.666f; // float í˜•ì˜ 1.666f ì´ˆê¸°ê°’ ì„ ì–¸
-		int kopo11_i4 = (int) kopo11_f2; // intë¥¼ floatë¡œ í˜•ë³€í™˜
+		float kopo11_f2 = 1.666f; // float ÇüÀÇ 1.666f ÃÊ±â°ª ¼±¾ğ
+		int kopo11_i4 = (int) kopo11_f2; // int¸¦ float·Î Çüº¯È¯
 
-		System.out.printf("kopo11_i = %d\n", kopo11_i);		// ì •ìˆ˜ 91234567 ì¶œë ¥
-		System.out.printf("kopo11_f = %f kopo11_i2 = %d\n", kopo11_f, kopo11_i2);	// floatí˜•ì˜ 91234568.000000, ì •ìˆ˜ 91234568 ì¶œë ¥
-		System.out.printf("kopo11_d = %f kopo11_i3 = %d\n", kopo11_d, kopo11_i3);	// doubleí˜•ì˜ 91234567.000000, ì •ìˆ˜ 91234567 ì¶œë ¥
-		System.out.printf("(int)%f = %d\n", kopo11_f2, kopo11_i4);	// floatí˜•ì˜ 1.666000, (int)ë¡œ í˜•ë³€í™˜í›„ ì†Œìˆ˜ì  ë²„ë¦° 1 ì¶œë ¥
+		System.out.printf("kopo11_i = %d\n", kopo11_i);		// Á¤¼ö 91234567 Ãâ·Â
+		System.out.printf("kopo11_f = %f kopo11_i2 = %d\n", kopo11_f, kopo11_i2);	// floatÇüÀÇ 91234568.000000, Á¤¼ö 91234568 Ãâ·Â
+		System.out.printf("kopo11_d = %f kopo11_i3 = %d\n", kopo11_d, kopo11_i3);	// doubleÇüÀÇ 91234567.000000, Á¤¼ö 91234567 Ãâ·Â
+		System.out.printf("(int)%f = %d\n", kopo11_f2, kopo11_i4);	// floatÇüÀÇ 1.666000, (int)·Î Çüº¯È¯ÈÄ ¼Ò¼öÁ¡ ¹ö¸° 1 Ãâ·Â
 	}
 
 }

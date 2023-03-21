@@ -3,18 +3,18 @@ package java2_0320;
 public class StringEx {
 
 	public static void main(String[] args) {
-		String kopo11_name = "Ja" + "va"; // String íƒ€ì… ë°°ì—´ì— "Ja" + "va" ê°’ ì…ë ¥ = "Java"
-		String kopo11_str = kopo11_name + 8.0; // String íƒ€ì… ë°°ì—´ì— "Java" + 8.0 ê°’ ì…ë ¥ = "Java8.0"
+		String kopo11_name = "Ja" + "va"; // String Å¸ÀÔ ¹è¿­¿¡ "Ja" + "va" °ª ÀÔ·Â = "Java"
+		String kopo11_str = kopo11_name + 8.0; // String Å¸ÀÔ ¹è¿­¿¡ "Java" + 8.0 °ª ÀÔ·Â = "Java8.0"
 
-		System.out.println(kopo11_name); // "Java" ì¶œë ¥
-		System.out.println(kopo11_str); // "Java8.0" ì¶œë ¥
-		System.out.println(7 + " ");	// 7 ì¶œë ¥
-		System.out.println(" " + 7);	// í•œì¹¸ë„ê³  7ì¶œë ¥
-		System.out.println(7 + "");		// 7ì¶œë ¥
-		System.out.println("" + 7);		// 7ì¶œë ¥
-		System.out.println("" + "");	// ë¹ˆì¹¸ ì¶œë ¥
-		System.out.println(7 + 7 + "");		// 7+7 = 14 ì¶œë ¥ int í˜•ìœ¼ë¡œ ê³„ì‚°
-		System.out.println("" + 7 + 7);		// ""ë¹ˆì¹¸ì„ String íƒ€ì…ìœ¼ë¡œ ê³„ì‚°í•˜ê³  7+7 = 77 ì¶œë ¥
+		System.out.println(kopo11_name); // "Java" Ãâ·Â
+		System.out.println(kopo11_str); // "Java8.0" Ãâ·Â
+		System.out.println(7 + " ");	// 7 Ãâ·Â
+		System.out.println(" " + 7);	// ÇÑÄ­¶ç°í 7Ãâ·Â
+		System.out.println(7 + "");		// 7Ãâ·Â
+		System.out.println("" + 7);		// 7Ãâ·Â
+		System.out.println("" + "");	// ºóÄ­ Ãâ·Â
+		System.out.println(7 + 7 + "");		// 7+7 = 14 Ãâ·Â int ÇüÀ¸·Î °è»ê
+		System.out.println("" + 7 + 7);		// ""ºóÄ­À» String Å¸ÀÔÀ¸·Î °è»êÇÏ°í 7+7 = 77 Ãâ·Â
 
 	}
 

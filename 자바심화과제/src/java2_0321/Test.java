@@ -4,24 +4,24 @@ public class Test {
 
 	public static void main(String[] args) {
 		/*
-		 * //////////////////////////////////////// // ë²”ìœ„ë¥¼ ì£¼ì–´ì„œ ì°¾ê¸° // int kopo11_iVal; //
-		 * intíƒ€ìž… ë³€ìˆ˜ ì„ ì–¸
+		 * //////////////////////////////////////// // ¹üÀ§¸¦ ÁÖ¾î¼­ Ã£±â // int kopo11_iVal; //
+		 * intÅ¸ÀÔ º¯¼ö ¼±¾ð
 		 * 
-		 * for (int i = 0; i < 300; i++) { // 0 ~ 299 ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸
+		 * for (int i = 0; i < 300; i++) { // 0 ~ 299 ±îÁö µµ´Â ¹Ýº¹¹®
 		 * 
-		 * kopo11_iVal = 5 * i; // 5 * i í•œ ê°’ì„ ë³€ìˆ˜ì— ëŒ€ìž…
+		 * kopo11_iVal = 5 * i; // 5 * i ÇÑ °ªÀ» º¯¼ö¿¡ ´ëÀÔ
 		 * 
-		 * // iValì˜ ê°’ì´ 0ê³¼ ê°™ê±°ë‚˜ í¬ê³  'ê·¸ë¦¬ê³ ' 10ë³´ë‹¤ëŠ” ìž‘ìœ¼ë©´ "ì¼ = ê°’ ì¶œë ¥" if(kopo11_iVal >= 0 &&
-		 * kopo11_iVal < 10) System.out.printf("ì¼ = %d\n", kopo11_iVal);
+		 * // iValÀÇ °ªÀÌ 0°ú °°°Å³ª Å©°í '±×¸®°í' 10º¸´Ù´Â ÀÛÀ¸¸é "ÀÏ = °ª Ãâ·Â" if(kopo11_iVal >= 0 &&
+		 * kopo11_iVal < 10) System.out.printf("ÀÏ = %d\n", kopo11_iVal);
 		 * 
-		 * // iValì˜ ê°’ì´ 10ê³¼ ê°™ê±°ë‚˜ í¬ê³  'ê·¸ë¦¬ê³ ' 100ë³´ë‹¤ëŠ” ìž‘ìœ¼ë©´ "ì‹­ = ê°’ ì¶œë ¥" else if(kopo11_iVal >= 10
-		 * && kopo11_iVal < 100) System.out.printf("ì‹­ = %d\n", kopo11_iVal);
+		 * // iValÀÇ °ªÀÌ 10°ú °°°Å³ª Å©°í '±×¸®°í' 100º¸´Ù´Â ÀÛÀ¸¸é "½Ê = °ª Ãâ·Â" else if(kopo11_iVal >= 10
+		 * && kopo11_iVal < 100) System.out.printf("½Ê = %d\n", kopo11_iVal);
 		 * 
-		 * // iValì˜ ê°’ì´ 100ê³¼ ê°™ê±°ë‚˜ í¬ê³  'ê·¸ë¦¬ê³ ' 1000ë³´ë‹¤ëŠ” ìž‘ìœ¼ë©´ "ë°± = ê°’ ì¶œë ¥" else if(kopo11_iVal >=
-		 * 100 && kopo11_iVal < 1000) System.out.printf("ë°± = %d\n", kopo11_iVal);
+		 * // iValÀÇ °ªÀÌ 100°ú °°°Å³ª Å©°í '±×¸®°í' 1000º¸´Ù´Â ÀÛÀ¸¸é "¹é = °ª Ãâ·Â" else if(kopo11_iVal >=
+		 * 100 && kopo11_iVal < 1000) System.out.printf("¹é = %d\n", kopo11_iVal);
 		 * 
-		 * // ì¡°ê±´ì— ì—†ëŠ” ê·¸ ì™¸ì˜ ê°’ì´ ë“¤ì–´ì˜¤ë©´ "ì²œ = ê°’ ì¶œë ¥" else
-		 * System.out.printf("ì²œ %d\n",kopo11_iVal); }
+		 * // Á¶°Ç¿¡ ¾ø´Â ±× ¿ÜÀÇ °ªÀÌ µé¾î¿À¸é "Ãµ = °ª Ãâ·Â" else
+		 * System.out.printf("Ãµ %d\n",kopo11_iVal); }
 		 */
 
 //		
@@ -29,126 +29,126 @@ public class Test {
 //		
 //		
 
-		for (int kopo11_i = 1; kopo11_i < 13; kopo11_i++) { // 1 ~ 12 ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸
-			System.out.printf(" %dì›” =>", kopo11_i); // iì›” ì¶œë ¥
-			for (int kopo11_j = 1; kopo11_j < 32; kopo11_j++) { // // 1 ~ 32 ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸
-				System.out.printf("%d", kopo11_j); // j ì¼ìˆ˜ ì¶œë ¥
+		for (int kopo11_i = 1; kopo11_i < 13; kopo11_i++) { // 1 ~ 12 ±îÁö µµ´Â ¹Ýº¹¹®
+			System.out.printf(" %d¿ù =>", kopo11_i); // i¿ù Ãâ·Â
+			for (int kopo11_j = 1; kopo11_j < 32; kopo11_j++) { // // 1 ~ 32 ±îÁö µµ´Â ¹Ýº¹¹®
+				System.out.printf("%d", kopo11_j); // j ÀÏ¼ö Ãâ·Â
 
-				if (true) { // if ë¬¸ ì•ˆì˜ ì¡°ê±´ì´ trueê°€ ë˜ë©´
+				if (true) { // if ¹® ¾ÈÀÇ Á¶°ÇÀÌ true°¡ µÇ¸é
 					if (kopo11_i == 1 && kopo11_j == 31) {
-						break; // iê°€ 1ì¼ë•Œ jê°€ 31 ì´ë©´ break;
+						break; // i°¡ 1ÀÏ¶§ j°¡ 31 ÀÌ¸é break;
 					}
 					if (kopo11_i == 2 && kopo11_j == 28) {
-						break; // iê°€ 2ì¼ë•Œ jê°€ 28 ì´ë©´ break;
+						break; // i°¡ 2ÀÏ¶§ j°¡ 28 ÀÌ¸é break;
 					}
 					if (kopo11_i == 3 && kopo11_j == 31) {
-						break; // iê°€ 3ì¼ë•Œ jê°€ 31 ì´ë©´ break;
+						break; // i°¡ 3ÀÏ¶§ j°¡ 31 ÀÌ¸é break;
 					}
 					if (kopo11_i == 4 && kopo11_j == 30) {
-						break; // iê°€ 4ì¼ë•Œ jê°€ 30 ì´ë©´ break;
+						break; // i°¡ 4ÀÏ¶§ j°¡ 30 ÀÌ¸é break;
 					}
 					if (kopo11_i == 5 && kopo11_j == 31) {
-						break; // iê°€ 5ì¼ë•Œ jê°€ 31 ì´ë©´ break;
+						break; // i°¡ 5ÀÏ¶§ j°¡ 31 ÀÌ¸é break;
 					}
 					if (kopo11_i == 6 && kopo11_j == 30) {
-						break; // iê°€ 6ì¼ë•Œ jê°€ 30 ì´ë©´ break;
+						break; // i°¡ 6ÀÏ¶§ j°¡ 30 ÀÌ¸é break;
 					}
 					if (kopo11_i == 7 && kopo11_j == 31) {
-						break; // iê°€ 7ì¼ë•Œ jê°€ 31 ì´ë©´ break;
+						break; // i°¡ 7ÀÏ¶§ j°¡ 31 ÀÌ¸é break;
 					}
 					if (kopo11_i == 8 && kopo11_j == 31) {
-						break; // iê°€ 8ì¼ë•Œ jê°€ 31 ì´ë©´ break;
+						break; // i°¡ 8ÀÏ¶§ j°¡ 31 ÀÌ¸é break;
 					}
 					if (kopo11_i == 9 && kopo11_j == 30) {
-						break; // iê°€ 9ì¼ë•Œ jê°€ 30 ì´ë©´ break;
+						break; // i°¡ 9ÀÏ¶§ j°¡ 30 ÀÌ¸é break;
 					}
 					if (kopo11_i == 10 && kopo11_j == 31) {
-						break; // iê°€ 10ì¼ë•Œ jê°€ 31 ì´ë©´ break;
+						break; // i°¡ 10ÀÏ¶§ j°¡ 31 ÀÌ¸é break;
 					}
 					if (kopo11_i == 11 && kopo11_j == 30) {
-						break; // iê°€ 11ì¼ë•Œ jê°€ 30 ì´ë©´ break;
+						break; // i°¡ 11ÀÏ¶§ j°¡ 30 ÀÌ¸é break;
 					}
 					if (kopo11_i == 12 && kopo11_j == 31) {
-						break; // iê°€ 12ì¼ë•Œ jê°€ 31 ì´ë©´ break;
+						break; // i°¡ 12ÀÏ¶§ j°¡ 31 ÀÌ¸é break;
 					}
-					System.out.printf(",", ""); // ",","" ë§ˆì§€ë§‰ì€ ì½¤ë§ˆë¥¼ ì°ì§€ ì•Šê²Œ ì¶œë ¥
+					System.out.printf(",", ""); // ",","" ¸¶Áö¸·Àº ÄÞ¸¶¸¦ ÂïÁö ¾Ê°Ô Ãâ·Â
 				}
 			}
-			System.out.printf("\n"); // ê°œí–‰
-			System.out.printf("\n"); // ê°œí–‰
+			System.out.printf("\n"); // °³Çà
+			System.out.printf("\n"); // °³Çà
 		}
 
 //		
 //		
 //		
 //	
-		for (int kpo11_i = 1; kpo11_i < 13; kpo11_i++) { // 1 ~ 12 ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸
-			System.out.printf(" %dì›” =>", kpo11_i); // iì›” ì¶œë ¥
-			for (int kopo11_j = 1; kopo11_j < 32; kopo11_j++) { // 1 ~ 32 ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸
-				System.out.printf("%d", kopo11_j); // j ì¼ìˆ˜ ì¶œë ¥
+		for (int kpo11_i = 1; kpo11_i < 13; kpo11_i++) { // 1 ~ 12 ±îÁö µµ´Â ¹Ýº¹¹®
+			System.out.printf(" %d¿ù =>", kpo11_i); // i¿ù Ãâ·Â
+			for (int kopo11_j = 1; kopo11_j < 32; kopo11_j++) { // 1 ~ 32 ±îÁö µµ´Â ¹Ýº¹¹®
+				System.out.printf("%d", kopo11_j); // j ÀÏ¼ö Ãâ·Â
 
 				if (true) {
-					// iê°€ 4 ë˜ëŠ” 6 ë˜ëŠ” 9 ë˜ëŠ” 7 ë˜ëŠ” 11ì¼ë•Œ
+					// i°¡ 4 ¶Ç´Â 6 ¶Ç´Â 9 ¶Ç´Â 7 ¶Ç´Â 11ÀÏ¶§
 					if (kpo11_i == 4 || kpo11_i == 6 || kpo11_i == 9 || kpo11_i == 7 || kpo11_i == 11) {
-						if (kopo11_j == 30) // jê°€ 30 ì´ë©´
+						if (kopo11_j == 30) // j°¡ 30 ÀÌ¸é
 							break; // break;
 					}
-					if (kpo11_i == 2) { // iê°€ 2 ì´ê³ 
+					if (kpo11_i == 2) { // i°¡ 2 ÀÌ°í
 						if (kopo11_j == 28)
-							break; // jê°€ 28ê³¼ ê°™ìœ¼ë©´ break;
-					} else if (kopo11_j == 31) // ê·¸ ì™¸ jê°€ 31 ì´ë©´
+							break; // j°¡ 28°ú °°À¸¸é break;
+					} else if (kopo11_j == 31) // ±× ¿Ü j°¡ 31 ÀÌ¸é
 						break; // break;
-					System.out.printf(",", ""); // ",","" ë§ˆì§€ë§‰ì€ ì½¤ë§ˆë¥¼ ì°ì§€ ì•Šê²Œ ì¶œë ¥
+					System.out.printf(",", ""); // ",","" ¸¶Áö¸·Àº ÄÞ¸¶¸¦ ÂïÁö ¾Ê°Ô Ãâ·Â
 				}
 			}
-			System.out.printf("\n"); // ê°œí–‰
+			System.out.printf("\n"); // °³Çà
 		}
 		
 //		
 //		
 //		
-		for (int kopo11_i = 1; kopo11_i < 13; kopo11_i++) { // 1 ~ 12 ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸
-			System.out.printf(" %dì›” =>", kopo11_i); // iì›” ì¶œë ¥
-			LOOP: for (int kopo11_j = 1; kopo11_j < 32; kopo11_j++) { // 1 ~ 32 ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸
+		for (int kopo11_i = 1; kopo11_i < 13; kopo11_i++) { // 1 ~ 12 ±îÁö µµ´Â ¹Ýº¹¹®
+			System.out.printf(" %d¿ù =>", kopo11_i); // i¿ù Ãâ·Â
+			LOOP: for (int kopo11_j = 1; kopo11_j < 32; kopo11_j++) { // 1 ~ 32 ±îÁö µµ´Â ¹Ýº¹¹®
 
-				System.out.printf("%d,", kopo11_j); // j ì¼ìˆ˜ ì¶œë ¥
+				System.out.printf("%d,", kopo11_j); // j ÀÏ¼ö Ãâ·Â
 
-				switch (kopo11_i) { // i ê°€ í•˜ë‚˜ì”© ë“¤ì–´ì˜¬ë•Œ ë„ëŠ” ìŠ¤ìœ„ì¹˜
+				switch (kopo11_i) { // i °¡ ÇÏ³ª¾¿ µé¾î¿Ã¶§ µµ´Â ½ºÀ§Ä¡
 				case 4:
 				case 6:
 				case 9:
 				case 7:
-				case 11: // iê°€ 4 ë˜ëŠ” 6 ë˜ëŠ” 9 ë˜ëŠ” 7 ë˜ëŠ” 11ì¼ë•Œ
+				case 11: // i°¡ 4 ¶Ç´Â 6 ¶Ç´Â 9 ¶Ç´Â 7 ¶Ç´Â 11ÀÏ¶§
 					if (kopo11_j == 30)
-						break LOOP; // jê°€ 30ì´ë©´ LOOP break;
+						break LOOP; // j°¡ 30ÀÌ¸é LOOP break;
 					break;
-				case 2: // iê°€ 2 ì´ê³ 
+				case 2: // i°¡ 2 ÀÌ°í
 					if (kopo11_j == 28)
-						break LOOP; // jê°€ 28ê³¼ ê°™ìœ¼ë©´ break;F
+						break LOOP; // j°¡ 28°ú °°À¸¸é break;F
 					break;
 				}
 			}
-			System.out.printf("\n"); // ê°œí–‰
+			System.out.printf("\n"); // °³Çà
 		}
-		System.out.printf("\n"); // ê°œí–‰
+		System.out.printf("\n"); // °³Çà
 //		
 //		
 //		
 //		
-		// int ë°°ì—´ì— {31,28,31,30,31,30,31,31,30,31,30,31} ì´ˆê¸°ê°’ ì„ ì–¸
+		// int ¹è¿­¿¡ {31,28,31,30,31,30,31,31,30,31,30,31} ÃÊ±â°ª ¼±¾ð
 		int[] kopo11_iLMD = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-		for (int i = 1; i < 13; i++) { // 1 ~ 12 ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸
-			System.out.printf(" %dì›” =>", i); // iì›” ì¶œë ¥
-			for (int j = 1; j < 32; j++) { // 1 ~ 32 ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸
-				System.out.printf("%d", j); // j ì¼ìˆ˜ ì¶œë ¥
+		for (int i = 1; i < 13; i++) { // 1 ~ 12 ±îÁö µµ´Â ¹Ýº¹¹®
+			System.out.printf(" %d¿ù =>", i); // i¿ù Ãâ·Â
+			for (int j = 1; j < 32; j++) { // 1 ~ 32 ±îÁö µµ´Â ¹Ýº¹¹®
+				System.out.printf("%d", j); // j ÀÏ¼ö Ãâ·Â
 
 				if (kopo11_iLMD[i - 1] == j)
-					break; // iLMeì˜ i-1ë²ˆì§¸ê°€ jëž‘ ê°™ìœ¼ë©´ break;
+					break; // iLMeÀÇ i-1¹øÂ°°¡ j¶û °°À¸¸é break;
 
-				System.out.printf(","); // ë§ˆì§€ë§‰ ì½¤ë§ˆ ì•ˆì°ê¸°
+				System.out.printf(","); // ¸¶Áö¸· ÄÞ¸¶ ¾ÈÂï±â
 			}
-			System.out.printf("\n"); // ê°œí–‰
+			System.out.printf("\n"); // °³Çà
 		}
 	}
 

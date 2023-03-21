@@ -4,15 +4,15 @@ public class Test1 {
 
 	public static void main(String[] args) {
 		
-		String kopo11_s = "12345";	// String íƒ€ì…ì˜ kopo11_s ë³€ìˆ˜ì— "12345" ì´ˆê¸°ê°’ ì„ ì–¸
-		int kopo11_i = Integer.parseInt(kopo11_s);	// int íƒ€ì…ì˜ ë³€ìˆ˜ë¡œ í˜•ë³€í™˜
+		String kopo11_s = "12345";	// String Å¸ÀÔÀÇ kopo11_s º¯¼ö¿¡ "12345" ÃÊ±â°ª ¼±¾ğ
+		int kopo11_i = Integer.parseInt(kopo11_s);	// int Å¸ÀÔÀÇ º¯¼ö·Î Çüº¯È¯
 		
-		System.out.printf("ë¬¸ìë¥¼ ìˆ«ìë¡œ %d	 (%d)\n", kopo11_i, kopo11_i+10); // ìˆ«ìë¡œ ë³€í™˜í•œ 12345 ì™€ (12345+10)ì„ ì¶œë ¥
+		System.out.printf("¹®ÀÚ¸¦ ¼ıÀÚ·Î %d	 (%d)\n", kopo11_i, kopo11_i+10); // ¼ıÀÚ·Î º¯È¯ÇÑ 12345 ¿Í (12345+10)À» Ãâ·Â
 		
-		String kopo11_a;	// String íƒ€ì…ì˜ ë³€ìˆ˜ kopo11_a ì„ ì–¸
-		kopo11_a = String.format("%d", kopo11_i);	// int 12345ë¥¼ Stringìœ¼ë¡œ í˜•ë³€í™˜
+		String kopo11_a;	// String Å¸ÀÔÀÇ º¯¼ö kopo11_a ¼±¾ğ
+		kopo11_a = String.format("%d", kopo11_i);	// int 12345¸¦ StringÀ¸·Î Çüº¯È¯
 		
-		System.out.printf("ìˆ«ìë¥¼ ë¬¸ìë¡œ %s	 (%s)\n", kopo11_a, kopo11_a+"abcde");	// String "12345"ì™€ ("12345"+"abcde") ì¶œë ¥
+		System.out.printf("¼ıÀÚ¸¦ ¹®ÀÚ·Î %s	 (%s)\n", kopo11_a, kopo11_a+"abcde");	// String "12345"¿Í ("12345"+"abcde") Ãâ·Â
 
 	}
 

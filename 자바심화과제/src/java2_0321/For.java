@@ -4,20 +4,20 @@ public class For {
 
 	public static void main(String[] args) {
 
-		int kopo11_sum = 0;		// int ì´ˆê¸°ê°’ 0 ì„ ì–¸
+		int kopo11_sum = 0;		// int ÃÊ±â°ª 0 ¼±¾ð
 		
-		for (int i = 0; i < 10; i++) {	// 0 ~ 9ê¹Œì§€ ìˆœì„œëŒ€ë¡œ ë„ëŠ” ë°˜ë³µë¬¸ 
-			kopo11_sum = kopo11_sum + i;	// int ë³€ìˆ˜ì— ë³€ìˆ˜ ì €ìž¥ê°’ + iê°’ì„ ëˆ„ì  ë”í•˜ê¸° í•œë‹¤.
+		for (int i = 0; i < 10; i++) {	// 0 ~ 9±îÁö ¼ø¼­´ë·Î µµ´Â ¹Ýº¹¹® 
+			kopo11_sum = kopo11_sum + i;	// int º¯¼ö¿¡ º¯¼ö ÀúÀå°ª + i°ªÀ» ´©Àû ´õÇÏ±â ÇÑ´Ù.
 		}
-		System.out.printf("kopo11_sum = %d\n", kopo11_sum);	// ë³€ìˆ˜ì— ë‹´ê¸´ ìµœì¢…ê°’ í”„ë¦°íŠ¸
+		System.out.printf("kopo11_sum = %d\n", kopo11_sum);	// º¯¼ö¿¡ ´ã±ä ÃÖÁ¾°ª ÇÁ¸°Æ®
 
-		for (int i = 1; i < 10; i++) {	// 1 ~ 9ê¹Œì§€ ìˆœì„œëŒ€ë¡œ ë„ëŠ” ë°˜ë³µë¬¸ 
-			System.out.printf("***************************\n", i);	// *ì¶œë ¥
-			System.out.printf("	êµ¬êµ¬ë‹¨ %d ë‹¨\n", i);	// êµ¬êµ¬ë‹¨ ië²ˆ ì¶œë ¥
-			System.out.printf("***************************\n", i);	// *ì¶œë ¥
-			for (int j = 1; j < 10; j++) {	// 1 ~ 9ê¹Œì§€ ìˆœì„œëŒ€ë¡œ ë„ëŠ” ë°˜ë³µë¬¸
+		for (int i = 1; i < 10; i++) {	// 1 ~ 9±îÁö ¼ø¼­´ë·Î µµ´Â ¹Ýº¹¹® 
+			System.out.printf("***************************\n", i);	// *Ãâ·Â
+			System.out.printf("	±¸±¸´Ü %d ´Ü\n", i);	// ±¸±¸´Ü i¹ø Ãâ·Â
+			System.out.printf("***************************\n", i);	// *Ãâ·Â
+			for (int j = 1; j < 10; j++) {	// 1 ~ 9±îÁö ¼ø¼­´ë·Î µµ´Â ¹Ýº¹¹®
 				
-				System.out.printf(" %d * %d = %d \n", i, j, i * j);		// i , j , i * j ì¶œë ¥
+				System.out.printf(" %d * %d = %d \n", i, j, i * j);		// i , j , i * j Ãâ·Â
 			}
 		}
 	}

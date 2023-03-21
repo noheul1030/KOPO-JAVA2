@@ -3,10 +3,10 @@ package java2_0320;
 public class SpecialChar {
 
 	public static void main(String[] args) {
-		System.out.println('\'');	// ''' ì²˜ëŸ¼ í•  ìˆ˜ ì—†ë‹¤.
-		System.out.println("abc\t123\b456");	// abc \tíƒ­ë§Œí¼ ë„ê³  123 \b (ë°±ìŠ¤í˜ì´ìŠ¤ë¡œ 3ì„ ì§€ì›Œì•¼ í•˜ë‚˜ ì˜¤ë¥˜ê°€ ìˆìŒ) 456
-		System.out.println('\n');	// ê°œí–‰
-		System.out.println("\"Hello\"");	// í° ë”°ì˜´í‘œ ì¶œë ¥ ì€ \"
+		System.out.println('\'');	// ''' Ã³·³ ÇÒ ¼ö ¾ø´Ù.
+		System.out.println("abc\t123\b456");	// abc \tÅÇ¸¸Å­ ¶ç°í 123 \b (¹é½ºÆäÀÌ½º·Î 3À» Áö¿ö¾ß ÇÏ³ª ¿À·ù°¡ ÀÖÀ½) 456
+		System.out.println('\n');	// °³Çà
+		System.out.println("\"Hello\"");	// Å« µû¿ÈÇ¥ Ãâ·Â Àº \"
 		System.out.println("c:\\");		
 	}
 

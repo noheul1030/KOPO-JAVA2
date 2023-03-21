@@ -8,117 +8,117 @@ public class ChangeMoney {
 
 	public static void main(String[] args) {
 
-		int kopo11_MyWon = 1000000; // intí˜• MyWonë³€ìˆ˜ ì´ˆê¸°ê°’ 1000000 ì„ ì–¸
-		double kopo11_MoneyEx = 1238.21; // ë‹¬ëŸ¬ í™˜ì „ìœ¨
-		double kopo11_commission = 0.003; // ìˆ˜ìˆ˜ë£Œ
+		int kopo11_MyWon = 1000000; // intÇü MyWonº¯¼ö ÃÊ±â°ª 1000000 ¼±¾ğ
+		double kopo11_MoneyEx = 1238.21; // ´Ş·¯ È¯ÀüÀ²
+		double kopo11_commission = 0.003; // ¼ö¼ö·á
 
-		int kopo11_usd = (int) (kopo11_MyWon / kopo11_MoneyEx); // ë‹¬ëŸ¬ : ë‚´ëˆ / í™˜ì „ìœ¨
-		int kopo11_remain = (int) (kopo11_MyWon - kopo11_usd * kopo11_MoneyEx); // ì”ëˆ : ë‚´ëˆ - (ë‹¬ëŸ¬*í™˜ì „ìœ¨)
+		int kopo11_usd = (int) (kopo11_MyWon / kopo11_MoneyEx); // ´Ş·¯ : ³»µ· / È¯ÀüÀ²
+		int kopo11_remain = (int) (kopo11_MyWon - kopo11_usd * kopo11_MoneyEx); // ÀÜµ· : ³»µ· - (´Ş·¯*È¯ÀüÀ²)
 
-		System.out.printf("************************************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("			  ìˆ˜ìˆ˜ë£Œ ì—†ì´ ê³„ì‚°		\n");	// ìˆ˜ìˆ˜ë£Œ ì—†ì´ ê³„ì‚° ì¶œë ¥ ê°œí–‰
-		// ì´ í•œí™”í™˜ì „ê¸ˆì•¡: kopo11_MyWonì› => ë¯¸í™”: usdë‹¬ëŸ¬, ì”ëˆ: remainì› ì¶œë ¥
-		System.out.printf("ì´ í•œí™”í™˜ì „ê¸ˆì•¡: %dì› => ë¯¸í™”: %dë‹¬ëŸ¬, ì”ëˆ: %dì›\n", kopo11_MyWon, kopo11_usd, kopo11_remain);
+		System.out.printf("************************************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("			  ¼ö¼ö·á ¾øÀÌ °è»ê		\n");	// ¼ö¼ö·á ¾øÀÌ °è»ê Ãâ·Â °³Çà
+		// ÃÑ ÇÑÈ­È¯Àü±İ¾×: kopo11_MyWon¿ø => ¹ÌÈ­: usd´Ş·¯, ÀÜµ·: remain¿ø Ãâ·Â
+		System.out.printf("ÃÑ ÇÑÈ­È¯Àü±İ¾×: %d¿ø => ¹ÌÈ­: %d´Ş·¯, ÀÜµ·: %d¿ø\n", kopo11_MyWon, kopo11_usd, kopo11_remain);
 
-		System.out.printf("************************************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("\n");	// ê°œí–‰
+		System.out.printf("************************************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("\n");	// °³Çà
 //		
 //		
 //		
 //
-		double kopo11_ComPerOne = kopo11_MoneyEx * kopo11_commission; // 1 ë‹¬ëŸ¬ë‹¹ ë‹¬ëŸ¬ í™˜ìœ¨ * ìˆ˜ìˆ˜ë£Œ
+		double kopo11_ComPerOne = kopo11_MoneyEx * kopo11_commission; // 1 ´Ş·¯´ç ´Ş·¯ È¯À² * ¼ö¼ö·á
 
-		double totalcom = kopo11_usd * kopo11_ComPerOne; // ì´ í™˜ì „í•œ ë‹¬ëŸ¬ * í™˜ì „ ìˆ˜ìˆ˜ë£Œ
-		System.out.printf("************************************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("			  ìˆ˜ìˆ˜ë£Œ ê³„ì‚°		\n");	// ìˆ˜ìˆ˜ë£Œ ê³„ì‚° ì¶œë ¥ ê°œí–‰
-		// ì´ ìˆ˜ìˆ˜ë£Œ: totalcomì› => ë¯¸í™”: usdë‹¬ëŸ¬, ë‹¬ëŸ¬ë‹¹ ìˆ˜ìˆ˜ë£Œ: ComPerOneì› ì¶œë ¥
-		System.out.printf("ì´ ìˆ˜ìˆ˜ë£Œ: %fì› => ë¯¸í™”: %dë‹¬ëŸ¬, ë‹¬ëŸ¬ë‹¹ ìˆ˜ìˆ˜ë£Œ: %fì›\n", totalcom, kopo11_usd, kopo11_ComPerOne);
+		double totalcom = kopo11_usd * kopo11_ComPerOne; // ÃÑ È¯ÀüÇÑ ´Ş·¯ * È¯Àü ¼ö¼ö·á
+		System.out.printf("************************************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("			  ¼ö¼ö·á °è»ê		\n");	// ¼ö¼ö·á °è»ê Ãâ·Â °³Çà
+		// ÃÑ ¼ö¼ö·á: totalcom¿ø => ¹ÌÈ­: usd´Ş·¯, ´Ş·¯´ç ¼ö¼ö·á: ComPerOne¿ø Ãâ·Â
+		System.out.printf("ÃÑ ¼ö¼ö·á: %f¿ø => ¹ÌÈ­: %d´Ş·¯, ´Ş·¯´ç ¼ö¼ö·á: %f¿ø\n", totalcom, kopo11_usd, kopo11_ComPerOne);
 
-		System.out.printf("************************************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("\n");	// ê°œí–‰
+		System.out.printf("************************************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("\n");	// °³Çà
 //		
 //		
 //		
 //
-		int i_totalcom; // intí˜• ì´ìˆ˜ìˆ˜ë£Œ ë³€ìˆ˜ ì„ ì–¸
+		int i_totalcom; // intÇü ÃÑ¼ö¼ö·á º¯¼ö ¼±¾ğ
 
-		if (totalcom != (double) ((int) totalcom)) { // totalcomì˜ ë”ë¸”í˜•ê³¼ int ë³€í™˜ í›„ ì†Œìˆ«ì  ë²„ë¦¼ ìˆ˜ê°€ ê°™ì§€ ì•Šë‹¤ë©´!
-			i_totalcom = (int) totalcom + 1; // i_totalcom = totalcom + 1í•œ ê°’ì„ ë”í•œë‹¤.
+		if (totalcom != (double) ((int) totalcom)) { // totalcomÀÇ ´õºíÇü°ú int º¯È¯ ÈÄ ¼Ò¼ıÁ¡ ¹ö¸² ¼ö°¡ °°Áö ¾Ê´Ù¸é!
+			i_totalcom = (int) totalcom + 1; // i_totalcom = totalcom + 1ÇÑ °ªÀ» ´õÇÑ´Ù.
 		} else {
-			i_totalcom = (int) totalcom; // ê°™ìœ¼ë©´ ê± intë¡œ ì†Œìˆ«ì  ë²„ë¦°ìˆ˜ë¥¼ i_totalcomì— ì €ì¥
+			i_totalcom = (int) totalcom; // °°À¸¸é °Á int·Î ¼Ò¼ıÁ¡ ¹ö¸°¼ö¸¦ i_totalcom¿¡ ÀúÀå
 		}
-		System.out.printf("************************************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("			  ìˆ˜ìˆ˜ë£Œ ì ìš©í™˜ì „		\n");	// ìˆ˜ìˆ˜ë£Œ ì ìš© í™˜ì „ ì¶œë ¥ ê°œí–‰
-		// ì´ ìˆ˜ìˆ˜ë£Œ: i_totalcomì› => ë¯¸í™”: usdë‹¬ëŸ¬, ë‹¬ëŸ¬ë‹¹ ìˆ˜ìˆ˜ë£Œ: ComPerOneì› ì¶œë ¥
-		System.out.printf("ì´ ìˆ˜ìˆ˜ë£Œ: %dì› => ë¯¸í™”: %dë‹¬ëŸ¬, ë‹¬ëŸ¬ë‹¹ ìˆ˜ìˆ˜ë£Œ: %fì›\n", i_totalcom, kopo11_usd, kopo11_ComPerOne);
+		System.out.printf("************************************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("			  ¼ö¼ö·á Àû¿ëÈ¯Àü		\n");	// ¼ö¼ö·á Àû¿ë È¯Àü Ãâ·Â °³Çà
+		// ÃÑ ¼ö¼ö·á: i_totalcom¿ø => ¹ÌÈ­: usd´Ş·¯, ´Ş·¯´ç ¼ö¼ö·á: ComPerOne¿ø Ãâ·Â
+		System.out.printf("ÃÑ ¼ö¼ö·á: %d¿ø => ¹ÌÈ­: %d´Ş·¯, ´Ş·¯´ç ¼ö¼ö·á: %f¿ø\n", i_totalcom, kopo11_usd, kopo11_ComPerOne);
 
-		// ì”ëˆ : intí˜•ìœ¼ë¡œ ì†Œìˆ«ì  ì´í•˜ ë²„ë¦° (ë‚´ëˆ - (ë‹¬ëŸ¬í™˜ì „ê¸ˆ * í™˜ì „ìœ¨) - ì´ ìˆ˜ìˆ˜ë£Œ)
+		// ÀÜµ· : intÇüÀ¸·Î ¼Ò¼ıÁ¡ ÀÌÇÏ ¹ö¸° (³»µ· - (´Ş·¯È¯Àü±İ * È¯ÀüÀ²) - ÃÑ ¼ö¼ö·á)
 		kopo11_remain = (int) (kopo11_MyWon - kopo11_usd * kopo11_MoneyEx - i_totalcom);
-		// ì´ í•œí™”í™˜ì „ê¸ˆì•¡: kopo11_MyWonì› => ë¯¸í™”: usdë‹¬ëŸ¬, ìˆ˜ìˆ˜ë£Œì§•ìˆ˜: i_totalcomì› ì”ëˆ: remain ì¶œë ¥
-		System.out.printf("ì´ í•œí™”í™˜ì „ê¸ˆì•¡: %dì› => ë¯¸í™”: %dë‹¬ëŸ¬, ìˆ˜ìˆ˜ë£Œì§•ìˆ˜: %dì› ì”ëˆ: %d\n", kopo11_MyWon, kopo11_usd, i_totalcom, kopo11_remain);
-		System.out.printf("************************************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("\n");	// ê°œí–‰
+		// ÃÑ ÇÑÈ­È¯Àü±İ¾×: kopo11_MyWon¿ø => ¹ÌÈ­: usd´Ş·¯, ¼ö¼ö·áÂ¡¼ö: i_totalcom¿ø ÀÜµ·: remain Ãâ·Â
+		System.out.printf("ÃÑ ÇÑÈ­È¯Àü±İ¾×: %d¿ø => ¹ÌÈ­: %d´Ş·¯, ¼ö¼ö·áÂ¡¼ö: %d¿ø ÀÜµ·: %d\n", kopo11_MyWon, kopo11_usd, i_totalcom, kopo11_remain);
+		System.out.printf("************************************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("\n");	// °³Çà
 //
 //		
 //		
 //		
-		kopo11_usd = (int) (kopo11_MyWon / (kopo11_MoneyEx + kopo11_ComPerOne)); // ì´ í™˜ì „ ë‹¬ëŸ¬ = ë‚´ëˆ / í™˜ì „ìœ¨ + 1ë‹¬ëŸ¬ë‹¹ í™˜ì „ ìˆ˜ìˆ˜ë£Œ
-		totalcom = kopo11_usd * kopo11_ComPerOne; // ì´ ìˆ˜ìˆ˜ë£Œ = ì´ í™˜ì „ ë‹¬ëŸ¬ * 1ë‹¬ëŸ¬ë‹¹ í™˜ì „ ìˆ˜ìˆ˜ë£Œ
+		kopo11_usd = (int) (kopo11_MyWon / (kopo11_MoneyEx + kopo11_ComPerOne)); // ÃÑ È¯Àü ´Ş·¯ = ³»µ· / È¯ÀüÀ² + 1´Ş·¯´ç È¯Àü ¼ö¼ö·á
+		totalcom = kopo11_usd * kopo11_ComPerOne; // ÃÑ ¼ö¼ö·á = ÃÑ È¯Àü ´Ş·¯ * 1´Ş·¯´ç È¯Àü ¼ö¼ö·á
 		///////////////////
-		// ìˆ˜ìˆ˜ë£Œ ì˜¬ë¦¼ì²˜ë¦¬
-		if (totalcom != (double) ((int) totalcom)) // totalcomì˜ ë”ë¸”í˜•ê³¼ int ë³€í™˜ í›„ ì†Œìˆ«ì  ë²„ë¦¼ ìˆ˜ê°€ ê°™ì§€ ì•Šë‹¤ë©´!
-			i_totalcom = (int) totalcom + 1; // i_totalcom = totalcom + 1í•œ ê°’ì„ ë”í•œë‹¤.
+		// ¼ö¼ö·á ¿Ã¸²Ã³¸®
+		if (totalcom != (double) ((int) totalcom)) // totalcomÀÇ ´õºíÇü°ú int º¯È¯ ÈÄ ¼Ò¼ıÁ¡ ¹ö¸² ¼ö°¡ °°Áö ¾Ê´Ù¸é!
+			i_totalcom = (int) totalcom + 1; // i_totalcom = totalcom + 1ÇÑ °ªÀ» ´õÇÑ´Ù.
 		else
-			i_totalcom = (int) totalcom; // ê°™ìœ¼ë©´ intë¡œ ì†Œìˆ«ì  ë²„ë¦°ìˆ˜ë¥¼ i_totalcomì— ì €ì¥
+			i_totalcom = (int) totalcom; // °°À¸¸é int·Î ¼Ò¼ıÁ¡ ¹ö¸°¼ö¸¦ i_totalcom¿¡ ÀúÀå
 		///////////////////
-		System.out.printf("************************************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("			 (ì •í™•í•œ)ìˆ˜ìˆ˜ë£Œ ì ìš©í™˜ì „		\n");	// (ì •í™•í•œ)ìˆ˜ìˆ˜ë£Œ ì ìš©í™˜ì „ ì¶œë ¥ ê°œí–‰
+		System.out.printf("************************************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("			 (Á¤È®ÇÑ)¼ö¼ö·á Àû¿ëÈ¯Àü		\n");	// (Á¤È®ÇÑ)¼ö¼ö·á Àû¿ëÈ¯Àü Ãâ·Â °³Çà
 
-		// ì´ ìˆ˜ìˆ˜ë£Œ: i_totalcomì› => ë¯¸í™”: usdë‹¬ëŸ¬, ë‹¬ëŸ¬ë‹¹ ìˆ˜ìˆ˜ë£Œ: ComPerOneì› ì¶œë ¥
-		System.out.printf("ì´ ìˆ˜ìˆ˜ë£Œ: %dì› => ë¯¸í™”: %dë‹¬ëŸ¬, ë‹¬ëŸ¬ë‹¹ ìˆ˜ìˆ˜ë£Œ: %fì›\n", i_totalcom, kopo11_usd, kopo11_ComPerOne);
+		// ÃÑ ¼ö¼ö·á: i_totalcom¿ø => ¹ÌÈ­: usd´Ş·¯, ´Ş·¯´ç ¼ö¼ö·á: ComPerOne¿ø Ãâ·Â
+		System.out.printf("ÃÑ ¼ö¼ö·á: %d¿ø => ¹ÌÈ­: %d´Ş·¯, ´Ş·¯´ç ¼ö¼ö·á: %f¿ø\n", i_totalcom, kopo11_usd, kopo11_ComPerOne);
 
-		// ì”ëˆ : intí˜•ìœ¼ë¡œ ì†Œìˆ«ì  ì´í•˜ ë²„ë¦°(ë‚´ëˆ - (ë‹¬ëŸ¬í™˜ì „ê¸ˆ * í™˜ì „ìœ¨) - ì´ ìˆ˜ìˆ˜ë£Œ
+		// ÀÜµ· : intÇüÀ¸·Î ¼Ò¼ıÁ¡ ÀÌÇÏ ¹ö¸°(³»µ· - (´Ş·¯È¯Àü±İ * È¯ÀüÀ²) - ÃÑ ¼ö¼ö·á
 		kopo11_remain = (int) (kopo11_MyWon - kopo11_usd * kopo11_MoneyEx - i_totalcom);
-		// ì´ í•œí™”í™˜ì „ê¸ˆì•¡: kopo11_MyWonì› => ë¯¸í™”: usdë‹¬ëŸ¬, ìˆ˜ìˆ˜ë£Œì§•ìˆ˜: i_totalcomì› ì”ëˆ: remain ì¶œë ¥
-		System.out.printf("ì´ í•œí™”í™˜ì „ê¸ˆì•¡: %dì› => ë¯¸í™”: %dë‹¬ëŸ¬, ìˆ˜ìˆ˜ë£Œì§•ìˆ˜: %dì› ì”ëˆ: %d\n", kopo11_MyWon, kopo11_usd, i_totalcom, kopo11_remain);
+		// ÃÑ ÇÑÈ­È¯Àü±İ¾×: kopo11_MyWon¿ø => ¹ÌÈ­: usd´Ş·¯, ¼ö¼ö·áÂ¡¼ö: i_totalcom¿ø ÀÜµ·: remain Ãâ·Â
+		System.out.printf("ÃÑ ÇÑÈ­È¯Àü±İ¾×: %d¿ø => ¹ÌÈ­: %d´Ş·¯, ¼ö¼ö·áÂ¡¼ö: %d¿ø ÀÜµ·: %d\n", kopo11_MyWon, kopo11_usd, i_totalcom, kopo11_remain);
 
-		System.out.printf("************************************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("\n");	// ê°œí–‰
+		System.out.printf("************************************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("\n");	// °³Çà
 //
 //		
 //		
 //		
 
-		DecimalFormat kopo11_decimal = new DecimalFormat("###,###,###,###,###");	// ìˆ«ì 1,000ë‹¨ìœ„ë¡œ ,ì»´ë§ˆ ì°ê¸° í¬ë§· ì„¤ì •
+		DecimalFormat kopo11_decimal = new DecimalFormat("###,###,###,###,###");	// ¼ıÀÚ 1,000´ÜÀ§·Î ,ÄÄ¸¶ Âï±â Æ÷¸Ë ¼³Á¤
 
-		System.out.printf("************************************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
-		System.out.printf("			ì½¤ë§ˆì°ê¸°, ë‚ ì§œ ì ìš©			\n");	// ì½¤ë§ˆì°ê¸°, ë‚ ì§œ ì ìš© ì¶œë ¥ ê°œí–‰
+		System.out.printf("************************************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
+		System.out.printf("			ÄŞ¸¶Âï±â, ³¯Â¥ Àû¿ë			\n");	// ÄŞ¸¶Âï±â, ³¯Â¥ Àû¿ë Ãâ·Â °³Çà
 		
-		// 1000 ë‹¨ìœ„ë¡œ , ì°ì–´ì„œ ì¶œë ¥
-		// ì´ ìˆ˜ìˆ˜ë£Œ: kopo11_decimal.format(i_totalcom)ì› => ë¯¸í™”: kopo11_decimal.format(usd) ë‹¬ëŸ¬, ë‹¬ëŸ¬ë‹¹ ìˆ˜ìˆ˜ë£Œ: ComPerOneì›
-		System.out.printf("ì´ ìˆ˜ìˆ˜ë£Œ: %sì› => ë¯¸í™”: %s ë‹¬ëŸ¬, ë‹¬ëŸ¬ë‹¹ ìˆ˜ìˆ˜ë£Œ: %fì›\n", 
+		// 1000 ´ÜÀ§·Î , Âï¾î¼­ Ãâ·Â
+		// ÃÑ ¼ö¼ö·á: kopo11_decimal.format(i_totalcom)¿ø => ¹ÌÈ­: kopo11_decimal.format(usd) ´Ş·¯, ´Ş·¯´ç ¼ö¼ö·á: ComPerOne¿ø
+		System.out.printf("ÃÑ ¼ö¼ö·á: %s¿ø => ¹ÌÈ­: %s ´Ş·¯, ´Ş·¯´ç ¼ö¼ö·á: %f¿ø\n", 
 				kopo11_decimal.format(i_totalcom),kopo11_decimal.format(kopo11_usd),kopo11_ComPerOne);
 
-		// ì”ëˆ : intí˜•ìœ¼ë¡œ ì†Œìˆ«ì  ì´í•˜ ë²„ë¦°(ë‚´ëˆ - (ë‹¬ëŸ¬í™˜ì „ê¸ˆ * í™˜ì „ìœ¨) - ì´ ìˆ˜ìˆ˜ë£Œ
+		// ÀÜµ· : intÇüÀ¸·Î ¼Ò¼ıÁ¡ ÀÌÇÏ ¹ö¸°(³»µ· - (´Ş·¯È¯Àü±İ * È¯ÀüÀ²) - ÃÑ ¼ö¼ö·á
 		kopo11_remain = (int)(kopo11_MyWon - kopo11_usd * kopo11_MoneyEx - i_totalcom);	
 		
-		// 1000 ë‹¨ìœ„ë¡œ , ì°ì–´ì„œ ì¶œë ¥
-		// ì´ í•œí™”í™˜ì „ê¸ˆì•¡: kopo11_decimal.format(kopo11_MyWon)ì› => ë¯¸í™”: kopo11_decimal.format(usd)ë‹¬ëŸ¬, 
-		// ìˆ˜ìˆ˜ë£Œ ì§•ìˆ˜: kopo11_decimal.format(i_totalcom)ì› ì”ëˆ: kopo11_decimal.format(remain)ì›
-		System.out.printf("ì´ í•œí™”í™˜ì „ê¸ˆì•¡: %sì› => ë¯¸í™”: %së‹¬ëŸ¬, ìˆ˜ìˆ˜ë£Œ ì§•ìˆ˜: %sì› ì”ëˆ: %sì›\n",
+		// 1000 ´ÜÀ§·Î , Âï¾î¼­ Ãâ·Â
+		// ÃÑ ÇÑÈ­È¯Àü±İ¾×: kopo11_decimal.format(kopo11_MyWon)¿ø => ¹ÌÈ­: kopo11_decimal.format(usd)´Ş·¯, 
+		// ¼ö¼ö·á Â¡¼ö: kopo11_decimal.format(i_totalcom)¿ø ÀÜµ·: kopo11_decimal.format(remain)¿ø
+		System.out.printf("ÃÑ ÇÑÈ­È¯Àü±İ¾×: %s¿ø => ¹ÌÈ­: %s´Ş·¯, ¼ö¼ö·á Â¡¼ö: %s¿ø ÀÜµ·: %s¿ø\n",
 				kopo11_decimal.format(kopo11_MyWon),kopo11_decimal.format(kopo11_usd), 
 				kopo11_decimal.format(i_totalcom),kopo11_decimal.format(kopo11_remain));
 		
-		System.out.printf("\n");	// ê°œí–‰
+		System.out.printf("\n");	// °³Çà
 //
 //
 //		
 //		
-		Calendar kopo11_cal = Calendar.getInstance();	// ì‹œê°„ ì„¤ì • í•¨ìˆ˜ ë¶ˆëŸ¬ì˜¤ê¸°
-		SimpleDateFormat sdt = new SimpleDateFormat("YYYY/MM/dd HH:mm:ss");	// SimpleDataFormat ê°ì²´ ìƒì„±("YYYY/MM/dd HH:mm:ss")í˜•íƒœë¡œ 
-		System.out.printf("ìµœì¢… ì‹¤í–‰ ì‹œê°„: %s\n", sdt.format(kopo11_cal.getTime()));	// sdt ê°ì²´ì— getTimeì…ë ¥
+		Calendar kopo11_cal = Calendar.getInstance();	// ½Ã°£ ¼³Á¤ ÇÔ¼ö ºÒ·¯¿À±â
+		SimpleDateFormat sdt = new SimpleDateFormat("YYYY/MM/dd HH:mm:ss");	// SimpleDataFormat °´Ã¼ »ı¼º("YYYY/MM/dd HH:mm:ss")ÇüÅÂ·Î 
+		System.out.printf("ÃÖÁ¾ ½ÇÇà ½Ã°£: %s\n", sdt.format(kopo11_cal.getTime()));	// sdt °´Ã¼¿¡ getTimeÀÔ·Â
 		
-		System.out.printf("************************************************************************\n");	// **ë¼ì¸ ì¶œë ¥ ê°œí–‰
+		System.out.printf("************************************************************************\n");	// **¶óÀÎ Ãâ·Â °³Çà
 	}
 
 }

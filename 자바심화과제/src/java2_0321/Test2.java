@@ -4,94 +4,94 @@ public class Test2 {
 
 	public static void main(String[] args) {
 //		
-//		// String ë°°ì—´ì— {"ì˜","ì¼","ì´","ì‚¼","ì‚¬","ì˜¤","ìœ¡","ì¹ ","íŒ”","êµ¬"} ì´ˆê¸°ê°’ ì„ ì–¸
-//		String [] kopo11_units = {"ì˜","ì¼","ì´","ì‚¼","ì‚¬","ì˜¤","ìœ¡","ì¹ ","íŒ”","êµ¬"};
-//		for (int i = 0; i < 101; i++) {	 	// 0 ~ 100 ê¹Œì§€ ë„ëŠ” ë°˜ë³µë¬¸
+//		// String ¹è¿­¿¡ {"¿µ","ÀÏ","ÀÌ","»ï","»ç","¿À","À°","Ä¥","ÆÈ","±¸"} ÃÊ±â°ª ¼±¾ğ
+//		String [] kopo11_units = {"¿µ","ÀÏ","ÀÌ","»ï","»ç","¿À","À°","Ä¥","ÆÈ","±¸"};
+//		for (int i = 0; i < 101; i++) {	 	// 0 ~ 100 ±îÁö µµ´Â ¹İº¹¹®
 //			
-//			if(i >= 0 && i < 10) {	// iê°€ 0ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ê³  'ê·¸ë¦¬ê³ ' iê°€ 10 ë³´ë‹¤ ì‘ìœ¼ë©´ ì¶œë ¥
-//				System.out.printf("ì¼ì˜ìë¦¬ : %s\n",kopo11_units[i]);	// ì¼ì˜ìë¦¬ : i 
+//			if(i >= 0 && i < 10) {	// i°¡ 0º¸´Ù Å©°Å³ª °°°í '±×¸®°í' i°¡ 10 º¸´Ù ÀÛÀ¸¸é Ãâ·Â
+//				System.out.printf("ÀÏÀÇÀÚ¸® : %s\n",kopo11_units[i]);	// ÀÏÀÇÀÚ¸® : i 
 //			}
-//			else if(i >= 10 && i < 100) {	// iê°€ 10ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ê³  'ê·¸ë¦¬ê³ ' iê°€ 100 ë³´ë‹¤ ì‘ìœ¼ë©´ ì¶œë ¥
+//			else if(i >= 10 && i < 100) {	// i°¡ 10º¸´Ù Å©°Å³ª °°°í '±×¸®°í' i°¡ 100 º¸´Ù ÀÛÀ¸¸é Ãâ·Â
 //				
-//				int kopo11_i10,kopo11_i0;	// int ë³€ìˆ˜ ë‘ê°œ ì„ ì–¸
+//				int kopo11_i10,kopo11_i0;	// int º¯¼ö µÎ°³ ¼±¾ğ
 //				
-//				kopo11_i10 = i/10;	// i ë‚˜ëˆ„ê¸° 10 ì˜ ê°’ ì €ì¥ : ì‹­ì˜ìë¦¬
-//				kopo11_i0 = i%10;	// ië¥¼ 10ìœ¼ë¡œ ë‚˜ëˆ„ê³  ê·¸ ë‚˜ë¨¸ì§€ ê°’ì„ ì €ì¥ : ì¼ì˜ìë¦¬
+//				kopo11_i10 = i/10;	// i ³ª´©±â 10 ÀÇ °ª ÀúÀå : ½ÊÀÇÀÚ¸®
+//				kopo11_i0 = i%10;	// i¸¦ 10À¸·Î ³ª´©°í ±× ³ª¸ÓÁö °ªÀ» ÀúÀå : ÀÏÀÇÀÚ¸®
 //				
-//				if(kopo11_i0 ==0) {	// ë‚˜ë¨¸ì§€ê°’ì´ 0 ì´ë©´ ì¶œë ¥ 
-//					System.out.printf("ì‹­ì˜ìë¦¬ : %sì‹­\n",kopo11_units[kopo11_i10]);	// ì‹­ì˜ìë¦¬ : kopo11_i10 ì‹­
-//				}else {	// ë‚˜ë¨¸ì§€ê°’ì´ 0ì´ ì•„ë‹ˆë¼ë©´ ì¶œë ¥
-//					// ì‹­ì˜ìë¦¬ : kopo11_i10 ì‹­ kopo11_i0
-//					System.out.printf("ì‹­ì˜ìë¦¬ : %sì‹­%s\n",kopo11_units[kopo11_i10],kopo11_units[kopo11_i0]);
+//				if(kopo11_i0 ==0) {	// ³ª¸ÓÁö°ªÀÌ 0 ÀÌ¸é Ãâ·Â 
+//					System.out.printf("½ÊÀÇÀÚ¸® : %s½Ê\n",kopo11_units[kopo11_i10]);	// ½ÊÀÇÀÚ¸® : kopo11_i10 ½Ê
+//				}else {	// ³ª¸ÓÁö°ªÀÌ 0ÀÌ ¾Æ´Ï¶ó¸é Ãâ·Â
+//					// ½ÊÀÇÀÚ¸® : kopo11_i10 ½Ê kopo11_i0
+//					System.out.printf("½ÊÀÇÀÚ¸® : %s½Ê%s\n",kopo11_units[kopo11_i10],kopo11_units[kopo11_i0]);
 //					
 //				}
 //			}
-//			else System.out.printf("==> %d\n",i);	// ê·¸ ì™¸ i ==> 100 ì¶œë ¥
+//			else System.out.printf("==> %d\n",i);	// ±× ¿Ü i ==> 100 Ãâ·Â
 //		}
 //		
 //		
 //		
 //		
-		int kopo11_iNumVal = 1001034567; // int íƒ€ì…ì˜ ë³€ìˆ˜ì— 1001034567 ì´ˆê¸°ê°’ ì„ ì–¸
+		int kopo11_iNumVal = 1001034567; // int Å¸ÀÔÀÇ º¯¼ö¿¡ 1001034567 ÃÊ±â°ª ¼±¾ğ
 
-		String kopo11_sNumVal = String.valueOf(kopo11_iNumVal); // int íƒ€ì…ì˜ ë³€ìˆ˜ë¥¼ String.valueOf() í•¨ìˆ˜ë¡œ í˜•ë³€í™˜ í›„ String ë³€ìˆ˜ì— ëŒ€ì…
+		String kopo11_sNumVal = String.valueOf(kopo11_iNumVal); // int Å¸ÀÔÀÇ º¯¼ö¸¦ String.valueOf() ÇÔ¼ö·Î Çüº¯È¯ ÈÄ String º¯¼ö¿¡ ´ëÀÔ
 
-		String kopo11_sNumVoice = ""; // ë¹„ì–´ìˆëŠ” String íƒ€ì…ì˜ ë³€ìˆ˜ ì„ ì–¸
+		String kopo11_sNumVoice = ""; // ºñ¾îÀÖ´Â String Å¸ÀÔÀÇ º¯¼ö ¼±¾ğ
 
-		// %s ìŠ¤íŠ¸ë§íƒ€ì… ì¶œë ¥, %d ì •ìˆ˜ ì¶œë ¥
-		// ==> kopo11_sNumVal [kopo11_sNumVal.length()] ì¶œë ¥ ê°œí–‰
-		System.out.printf("==> %s [%dìë¦¬]\n", kopo11_sNumVal, kopo11_sNumVal.length());
-		System.out.printf("\n"); // ê°œí–‰
+		// %s ½ºÆ®¸µÅ¸ÀÔ Ãâ·Â, %d Á¤¼ö Ãâ·Â
+		// ==> kopo11_sNumVal [kopo11_sNumVal.length()] Ãâ·Â °³Çà
+		System.out.printf("==> %s [%dÀÚ¸®]\n", kopo11_sNumVal, kopo11_sNumVal.length());
+		System.out.printf("\n"); // °³Çà
 
-		int kopo11_i, kopo11_j; // int íƒ€ì…ì˜ ë³€ìˆ˜ 2ê°œ ì„ ì–¸
+		int kopo11_i, kopo11_j; // int Å¸ÀÔÀÇ º¯¼ö 2°³ ¼±¾ğ
 
-		// String ë°°ì—´ì— {"ì˜","ì¼","ì´","ì‚¼","ì‚¬","ì˜¤","ìœ¡","ì¹ ","íŒ”","êµ¬"} ì´ˆê¸°ê°’ ì„ ì–¸
-		String[] kopo11_units2 = { "ì˜", "ì¼", "ì´", "ì‚¼", "ì‚¬", "ì˜¤", "ìœ¡", "ì¹ ", "íŒ”", "êµ¬" };
-		// String ë°°ì—´ì— {"", "ì‹­", "ë°±", "ì²œ", "ë§Œ", "ì‹­", "ë°±", "ì²œ", "ì–µ", "ì‹­"} ì´ˆê¸°ê°’ ì„ ì–¸
-		String[] kopo11_unitX = { "", "ì‹­", "ë°±", "ì²œ", "ë§Œ", "ì‹­", "ë°±", "ì²œ", "ì–µ", "ì‹­" };
+		// String ¹è¿­¿¡ {"¿µ","ÀÏ","ÀÌ","»ï","»ç","¿À","À°","Ä¥","ÆÈ","±¸"} ÃÊ±â°ª ¼±¾ğ
+		String[] kopo11_units2 = { "¿µ", "ÀÏ", "ÀÌ", "»ï", "»ç", "¿À", "À°", "Ä¥", "ÆÈ", "±¸" };
+		// String ¹è¿­¿¡ {"", "½Ê", "¹é", "Ãµ", "¸¸", "½Ê", "¹é", "Ãµ", "¾ï", "½Ê"} ÃÊ±â°ª ¼±¾ğ
+		String[] kopo11_unitX = { "", "½Ê", "¹é", "Ãµ", "¸¸", "½Ê", "¹é", "Ãµ", "¾ï", "½Ê" };
 
-		kopo11_i = 0; // ì´ˆê¸°ê°’ 0 ëŒ€ì…
-		kopo11_j = kopo11_sNumVal.length() - 1; // ì´ˆê¸°ê°’ 10 - 1 = 9 ëŒ€ì…
+		kopo11_i = 0; // ÃÊ±â°ª 0 ´ëÀÔ
+		kopo11_j = kopo11_sNumVal.length() - 1; // ÃÊ±â°ª 10 - 1 = 9 ´ëÀÔ
 
-		while (true) { // while ë°˜ë³µë¬¸ trueì¼ë•Œ ê³„ì† ì‹¤í–‰í•œë‹¤
-			if (kopo11_i >= kopo11_sNumVal.length()) // if( 0 >= 10) ì´ë©´ break;
+		while (true) { // while ¹İº¹¹® trueÀÏ¶§ °è¼Ó ½ÇÇàÇÑ´Ù
+			if (kopo11_i >= kopo11_sNumVal.length()) // if( 0 >= 10) ÀÌ¸é break;
 				break;
 
 			System.out.printf("%s[%s]", kopo11_sNumVal.substring(kopo11_i, kopo11_i + 1),
-					// kopo11_sNumVal.substring(kopo11_i, kopo11_i + 1 -> kopo11_sNumVal ê°’ì„
-					// .substring(kopo11_i, kopo11_i + 1) ë§Œí¼ ì˜ë¼ì™€ì„œ %sì— String íƒ€ì…ìœ¼ë¡œ ì¶œë ¥í•œë‹¤.
+					// kopo11_sNumVal.substring(kopo11_i, kopo11_i + 1 -> kopo11_sNumVal °ªÀ»
+					// .substring(kopo11_i, kopo11_i + 1) ¸¸Å­ Àß¶ó¿Í¼­ %s¿¡ String Å¸ÀÔÀ¸·Î Ãâ·ÂÇÑ´Ù.
 					kopo11_units2[Integer.parseInt(kopo11_sNumVal.substring(kopo11_i, kopo11_i + 1))]);
-			// (kopo11_sNumVal.substring(kopo11_i, kopo11_i + 1))ë¥¼ Integer.parseIntë¡œ int
-			// íƒ€ì…ìœ¼ë¡œ í˜•ë³€í™˜í•˜ì—¬
-			// kopo11_units2[ ]ì˜ ë°°ì—´ì—ì„œ []ë²ˆì§¸ì— í•´ë‹¹ë˜ëŠ” ê°’ì„ ê°€ì ¸ì™€ [%s] String íƒ€ì…ìœ¼ë¡œ ì¶œë ¥í•œë‹¤.
+			// (kopo11_sNumVal.substring(kopo11_i, kopo11_i + 1))¸¦ Integer.parseInt·Î int
+			// Å¸ÀÔÀ¸·Î Çüº¯È¯ÇÏ¿©
+			// kopo11_units2[ ]ÀÇ ¹è¿­¿¡¼­ []¹øÂ°¿¡ ÇØ´çµÇ´Â °ªÀ» °¡Á®¿Í [%s] String Å¸ÀÔÀ¸·Î Ãâ·ÂÇÑ´Ù.
 
-			// kopo11_sNumVal ë³€ìˆ˜ë¥¼ .substring( , ) í•˜ì—¬ í•˜ë‚˜ì”© ê°€ì ¸ì˜¨ ê°’ì´ "0"ê³¼ ì¼ì¹˜í•˜ëŠ”ì§€ í™•ì¸í•œë‹¤.
+			// kopo11_sNumVal º¯¼ö¸¦ .substring( , ) ÇÏ¿© ÇÏ³ª¾¿ °¡Á®¿Â °ªÀÌ "0"°ú ÀÏÄ¡ÇÏ´ÂÁö È®ÀÎÇÑ´Ù.
 			if (kopo11_sNumVal.substring(kopo11_i, kopo11_i + 1).equals("0")) {
 
-				// kopo11_unitX ë°°ì—´ì˜ [kopo11_j]ë²ˆì§¸ê°€ "ë§Œ"ê³¼ ì¼ì¹˜í•˜ëŠ”ì§€ 'ë˜ëŠ”' "ì–µ"ê³¼ ì¼ì¹˜í•˜ëŠ”ì§€ í™•ì¸í•œë‹¤.
-				if (kopo11_unitX[kopo11_j].equals("ë§Œ") || kopo11_unitX[kopo11_j].equals("ì–µ")) {
-					// ì¼ì¹˜í•  ì‹œ kopo11_sNumVoice ë³€ìˆ˜ì— kopo11_sNumVoice + ""(stringíƒ€ì…)+ kopo11_unitX ë°°ì—´ì˜
-					// [kopo11_j]ë²ˆì§¸ ëŒ€ì…
+				// kopo11_unitX ¹è¿­ÀÇ [kopo11_j]¹øÂ°°¡ "¸¸"°ú ÀÏÄ¡ÇÏ´ÂÁö '¶Ç´Â' "¾ï"°ú ÀÏÄ¡ÇÏ´ÂÁö È®ÀÎÇÑ´Ù.
+				if (kopo11_unitX[kopo11_j].equals("¸¸") || kopo11_unitX[kopo11_j].equals("¾ï")) {
+					// ÀÏÄ¡ÇÒ ½Ã kopo11_sNumVoice º¯¼ö¿¡ kopo11_sNumVoice + ""(stringÅ¸ÀÔ)+ kopo11_unitX ¹è¿­ÀÇ
+					// [kopo11_j]¹øÂ° ´ëÀÔ
 					kopo11_sNumVoice = kopo11_sNumVoice + "" + kopo11_unitX[kopo11_j];
 				} else {
-					// elseëŠ” íŒ¨ìŠ¤~
+					// else´Â ÆĞ½º~
 				}
-			} else {// kopo11_sNumVal ë³€ìˆ˜ë¥¼ .substring( , ) í•˜ì—¬ í•˜ë‚˜ì”© ê°€ì ¸ì˜¨ ê°’ì´ "0"ê³¼ ì¼ì¹˜í•˜ì§€ ì•Šì„ ë•Œ
+			} else {// kopo11_sNumVal º¯¼ö¸¦ .substring( , ) ÇÏ¿© ÇÏ³ª¾¿ °¡Á®¿Â °ªÀÌ "0"°ú ÀÏÄ¡ÇÏÁö ¾ÊÀ» ¶§
 				// kopo11_sNumVoice = kopo11_sNumVoice +
-				// (kopo11_sNumVal.substring(kopo11_i, kopo11_i + 1))ë¥¼ Integer.parseIntë¡œ int
-				// íƒ€ì…ìœ¼ë¡œ í˜•ë³€í™˜í•˜ì—¬
-				// kopo11_units2ì˜ ë°°ì—´ì—ì„œ []ë²ˆì§¸ì— í•´ë‹¹ë˜ëŠ” ê°’ì„ ê°€ì ¸ì™€ ë”í•œë‹¤.
-				// +kopo11_unitXì˜ [[kopo11_j] ë²ˆì§¸ ê°’ì„ ë”í•œë‹¤.
+				// (kopo11_sNumVal.substring(kopo11_i, kopo11_i + 1))¸¦ Integer.parseInt·Î int
+				// Å¸ÀÔÀ¸·Î Çüº¯È¯ÇÏ¿©
+				// kopo11_units2ÀÇ ¹è¿­¿¡¼­ []¹øÂ°¿¡ ÇØ´çµÇ´Â °ªÀ» °¡Á®¿Í ´õÇÑ´Ù.
+				// +kopo11_unitXÀÇ [[kopo11_j] ¹øÂ° °ªÀ» ´õÇÑ´Ù.
 				kopo11_sNumVoice = kopo11_sNumVoice
 						+ kopo11_units2[Integer.parseInt(kopo11_sNumVal.substring(kopo11_i, kopo11_i + 1))]
 						+ kopo11_unitX[kopo11_j];
 			}
-			kopo11_i++; // kopo11_iì— 1ì„ ë”í•œë‹¤.
-			kopo11_j--; // kopo11_jì— 1ì„ ëº€ë‹¤.
+			kopo11_i++; // kopo11_i¿¡ 1À» ´õÇÑ´Ù.
+			kopo11_j--; // kopo11_j¿¡ 1À» »«´Ù.
 
 		}
-		System.out.printf("\n"); // ê°œí–‰
-		// \n ê°œí–‰ í›„ kopo11_sNumValì˜ String í˜•íƒœì˜ [kopo11_sNumVoice]ë²ˆì§¸ ì¶œë ¥ í›„ ê°œí–‰ \n
+		System.out.printf("\n"); // °³Çà
+		// \n °³Çà ÈÄ kopo11_sNumValÀÇ String ÇüÅÂÀÇ [kopo11_sNumVoice]¹øÂ° Ãâ·Â ÈÄ °³Çà \n
 		System.out.printf("\n%s[%s]\n", kopo11_sNumVal, kopo11_sNumVoice);
 	}
 

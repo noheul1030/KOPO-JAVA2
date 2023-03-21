@@ -3,24 +3,24 @@ package java2_0320;
 public class CastingEx2 {
 
 	public static void main(String[] args) {
-		int kopo11_i = 10;	// int íƒ€ì… 10 ì´ˆê¸°ê°’ ì„ ì–¸
-		byte kopo11_b = (byte) kopo11_i;	//(byte)ë¡œ í˜•ë³€í™˜í•˜ì—¬10 ëŒ€ì…
+		int kopo11_i = 10;	// int Å¸ÀÔ 10 ÃÊ±â°ª ¼±¾ğ
+		byte kopo11_b = (byte) kopo11_i;	//(byte)·Î Çüº¯È¯ÇÏ¿©10 ´ëÀÔ
 
-		System.out.printf("[int -> byte] i = %d -> b = %d%n", kopo11_i, kopo11_b); // i = 10, b = 10 ì¶œë ¥
+		System.out.printf("[int -> byte] i = %d -> b = %d%n", kopo11_i, kopo11_b); // i = 10, b = 10 Ãâ·Â
 		
-		kopo11_i = 300;	// 300 ëŒ€ì…
-		kopo11_b = (byte)kopo11_i; // (byte)ë¡œ í˜•ë³€í™˜í•˜ì—¬ 300 ëŒ€ì…
-		System.out.printf("[int -> byte] i = %d -> b = %d%n", kopo11_i, kopo11_b);	 // i = 300, b = byte í¬ê¸° ì´ˆê³¼í•´ì„œ ê°’ ì†Œì‹¤!
+		kopo11_i = 300;	// 300 ´ëÀÔ
+		kopo11_b = (byte)kopo11_i; // (byte)·Î Çüº¯È¯ÇÏ¿© 300 ´ëÀÔ
+		System.out.printf("[int -> byte] i = %d -> b = %d%n", kopo11_i, kopo11_b);	 // i = 300, b = byte Å©±â ÃÊ°úÇØ¼­ °ª ¼Ò½Ç!
 		
-		kopo11_b = 10;	// 10 ëŒ€ì…
-		kopo11_i = (int)kopo11_b;	// (int)ë¡œ í˜•ë³€í™˜í•˜ì—¬ 10 ëŒ€ì…
-		System.out.printf("[int -> byte] b = %d -> i = %d%n", kopo11_b, kopo11_i);	 // b = 10, i = 10 ì¶œë ¥
+		kopo11_b = 10;	// 10 ´ëÀÔ
+		kopo11_i = (int)kopo11_b;	// (int)·Î Çüº¯È¯ÇÏ¿© 10 ´ëÀÔ
+		System.out.printf("[int -> byte] b = %d -> i = %d%n", kopo11_b, kopo11_i);	 // b = 10, i = 10 Ãâ·Â
 		
-		kopo11_b = -2;	// -2 ëŒ€ì…
-		kopo11_i = (int)kopo11_b;	// (int)ë¡œ í˜•ë³€í™˜í•˜ì—¬ -2 ëŒ€ì…
-		System.out.printf("[int -> byte] b = %d -> i = %d%n", kopo11_b, kopo11_i);	// b = -2, i = -2 ì¶œë ¥
+		kopo11_b = -2;	// -2 ´ëÀÔ
+		kopo11_i = (int)kopo11_b;	// (int)·Î Çüº¯È¯ÇÏ¿© -2 ´ëÀÔ
+		System.out.printf("[int -> byte] b = %d -> i = %d%n", kopo11_b, kopo11_i);	// b = -2, i = -2 Ãâ·Â
 		
-		// toBinaryString() -> 10ì§„ìˆ˜ë¥¼ 2ì§„ìˆ˜String ìœ¼ë¡œ ë³€í™˜
+		// toBinaryString() -> 10Áø¼ö¸¦ 2Áø¼öString À¸·Î º¯È¯
 		System.out.println("i = "+ Integer.toBinaryString(kopo11_i));
 	}
 
