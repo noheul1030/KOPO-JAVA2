@@ -1,3 +1,4 @@
+package java2_6悪;
 
 public class 持失切 {
 
