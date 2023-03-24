@@ -4,7 +4,7 @@ public class 구구단2 {
 
 	public static void main(String[] args) {
 
-		for (int kopo11_i = 1; kopo11_i < 4; kopo11_i++) { // 1 ~ 9까지 순서대로 도는 반복문
+		for (int kopo11_i = 1; kopo11_i < 4; kopo11_i++) { // 1 ~ 3까지 순서대로 도는 반복문
 
 			System.out.printf("*************\t*************\t*************\n", kopo11_i, kopo11_i + 1, kopo11_i + 2);
 			// 3단씩 출력 이므로 *****\t 해서 간격을 띄워주고 마지막에는 \n으로 개행 출력
