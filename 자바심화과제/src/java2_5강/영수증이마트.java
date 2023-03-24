@@ -38,8 +38,6 @@ public class 영수증이마트 {
 		int kopo11_sum = 0; // int 변수에 초기값 0 대입 (합계)
 		int kopo11_point = 5473; // int 변수에 누적 포인트 5473 대입
 
-//		
-//		System.out.println(subStrByte(itemname[0], 2));
 
 		System.out.printf("%35s\n", "이마트 죽전점(031)888-1234"); // String 출력 개행
 		System.out.printf("%7s%21s\n", "이마트", "206-86-50913 강희석"); // String 출력 개행
