@@ -24,22 +24,31 @@ public class ReportSheet {
 }
 
 class InputData {
-    String name = "이름:";
+    
+	String[] name = new String[iP]; // 이름
+    int[] kor = new int[iP]; // 국어
+    int[] eng = new int[iP]; // 영어
+    int[] mat = new int[iP]; // 수학
+    int[] sum = new int[iP]; // 총점
+    double[] ave = new double[iP]; // 평균
+    
+//    String name = "이름:";
+//    int kor;
+//    int eng;
+//    int mat;
+//    int sum;
+//    double ave;
 
     InputData(int iP) {
-
-        String[] number = new String[iP];
-        String[] iPerson = new String[iP];
-        int[] name = new int[iP];
-        int[] kor = new int[iP];
-        int[] eng = new int[iP];
-        int[] mat = new int[iP];
-        int[] sum = new int[iP];
-        double[] ave = new double[iP];
-        for (int i = 0; i < iP; i++) {
-            number[i] = "번호:" + i;
-            iPerson[i] = "" + i;
-        }
+    	
+        String[] name = new String[iP]; // 이름
+        int[] kor = new int[iP]; // 국어
+        int[] eng = new int[iP]; // 영어
+        int[] mat = new int[iP]; // 수학
+        int[] sum = new int[iP]; // 총점
+        double[] ave = new double[iP]; // 평균
+        
+       
 
     }
 
