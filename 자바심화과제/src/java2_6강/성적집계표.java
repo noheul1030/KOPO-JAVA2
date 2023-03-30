@@ -43,28 +43,28 @@ class Test extends InputData { // 메서드 상속 클래스
     }
 
     public void score(int kopo11_iPerson) {  // 메서드
-        for (int kopo11_i = 1; kopo11_i <= kopo11_iPerson; kopo11_i++) { // 1 ~ kopo11_iPerson 까지 도는 반복문
-            String kopo11_name = String.format("홍길%02d", kopo11_i); // 변수에 포멧 값 대입
+        for (int kopo11_i = 0; kopo11_i < kopo11_iPerson; kopo11_i++) { // 0 ~ kopo11_iPerson 까지 도는 반복문
+            String kopo11_name = String.format("홍길%02d", kopo11_i+1); // 변수에 포멧 값 대입
             int kopo11_kor = (int) (Math.random() * 101); // 100까지 랜덤한 숫자 값 대입
             int kopo11_eng = (int) (Math.random() * 101); // 100까지 랜덤한 숫자 값 대입
             int kopo11_mat = (int) (Math.random() * 101); // 100까지 랜덤한 숫자 값 대입
             // 클래스 생성자에 파라미터 값 전달
-            SetData(kopo11_i - 1, kopo11_name, kopo11_kor, kopo11_eng, kopo11_mat);
+            SetData(kopo11_i, kopo11_name, kopo11_kor, kopo11_eng, kopo11_mat);
         }
     }
 
     public void score2(int kopo11_iPerson) {  // 메서드
-        for (int kopo11_i = 1; kopo11_i <= kopo11_iPerson; kopo11_i++) { // 1 ~ kopo11_iPerson 까지 도는 반복문
-            korSum += kopo11_kor[kopo11_i - 1]; // 변수에 값 전달
-            engSum += kopo11_eng[kopo11_i - 1]; // 변수에 값 전달
-            matSum += kopo11_mat[kopo11_i - 1]; // 변수에 값 전달
-            Sum += kopo11_sum[kopo11_i - 1]; // 변수에 값 전달
-            aveSum += (int) kopo11_ave[kopo11_i - 1]; // 변수에 값 전달
+        for (int kopo11_i = 0; kopo11_i < kopo11_iPerson; kopo11_i++) { // 0 ~ kopo11_iPerson 까지 도는 반복문
+            korSum += kopo11_kor[kopo11_i]; // 변수에 값 전달
+            engSum += kopo11_eng[kopo11_i]; // 변수에 값 전달
+            matSum += kopo11_mat[kopo11_i]; // 변수에 값 전달
+            Sum += kopo11_sum[kopo11_i]; // 변수에 값 전달
+            aveSum += (int) kopo11_ave[kopo11_i]; // 변수에 값 전달
 
             // 입력 받은 값 출력 개행
-            System.out.printf("%03d%4s%-6s%6d%8d%9d%9d%9d\n", kopo11_i, "", kopo11_name[kopo11_i - 1], // 전달 값 출력
-                    kopo11_kor[kopo11_i - 1], kopo11_eng[kopo11_i - 1], kopo11_mat[kopo11_i - 1],
-                    kopo11_sum[kopo11_i - 1], (int) kopo11_ave[kopo11_i - 1]);
+            System.out.printf("%03d%4s%-6s%6d%8d%9d%9d%9d\n", kopo11_i+1, "", kopo11_name[kopo11_i], // 전달 값 출력
+                    kopo11_kor[kopo11_i], kopo11_eng[kopo11_i], kopo11_mat[kopo11_i],
+                    kopo11_sum[kopo11_i], (int) kopo11_ave[kopo11_i]);
         }
         System.out.printf("==============================================================\n"); // 라인 출력
     }
