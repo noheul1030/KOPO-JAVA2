@@ -2,6 +2,7 @@ package 문제풀이2일차;
 
 import java.util.*;
 
+// 완료
 public class 회장선거 {
 	public String solution(String[] votes, int k) {
 		String answer = " ";
