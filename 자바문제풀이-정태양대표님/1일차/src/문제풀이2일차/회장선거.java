@@ -1,6 +1,7 @@
 package 문제풀이2일차;
 
 import java.util.*;
+import java.util.Map.Entry;
 
 // 완료
 public class 회장선거 {
