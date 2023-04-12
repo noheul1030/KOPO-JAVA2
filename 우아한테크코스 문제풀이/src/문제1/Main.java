@@ -10,21 +10,17 @@ public class Main {
 
 		Problem1 pp = new Problem1();
 
-		pp.solution(pp.pobi, pp.crong);
+//		pp.solution(pp.pobi, pp.crong);
 	}
 
 }
 // 1. class Problem1
 class Problem1 {
-	List<Integer> pobi = new ArrayList<Integer>();
-	List<Integer> crong = new ArrayList<Integer>();
 	
 	// 2. 메서드들을 모아서 최종 결과값을 출력하는 메서드
 	int solution(List<Integer> pobi, List<Integer> crong) {
-		pobi();
-		crong();
 		
-		int answer = finalGame(pobi_Max(), crong_Max());
+		int answer = finalGame(pobi_Max(pobi()), crong_Max(crong()));
 
 		return answer;
 	}
@@ -38,7 +34,9 @@ class Problem1 {
 
 //////////////////////////////////////////////////////////////////////////////////
 	// 4. pobi의 리스트에 random page를 저장하는 메서드
-	public void pobi() {
+	public List<Integer> pobi() {
+		List<Integer> pobi = new ArrayList<Integer>();
+		
 		while (true) {
 			int random = this.random();
 			if (random == 1 || random == 2 || random == 399 || random == 400) {
@@ -51,14 +49,17 @@ class Problem1 {
 					pobi.add(random);
 					pobi.add(random + 1);
 				}
-				break;
+//				break;
 			}
+			return pobi;
 		}
 	}
 
 /////////////////////////////////////////////////////////////////////////////////
 	// 5. crong의 리스트에 random page를 저장하는 메서드
-	public void crong() {
+	public List<Integer> crong() {
+		List<Integer> crong = new ArrayList<Integer>();
+		
 		while (true) {
 			int random = this.random();
 			if (random == 1 || random == 2 || random == 399 || random == 400) {
@@ -71,14 +72,16 @@ class Problem1 {
 					crong.add(random);
 					crong.add(random + 1);
 				}
-				break;
+//				break;
 			}
+			return crong;
 		}
 	}
 
 /////////////////////////////////////////////////////////////////////////////////
 	// 6. pobi의 리스트에 담긴 값에서 큰 수를 찾아내는 메서드
-	public int pobi_Max() {
+	public int pobi_Max(List<Integer> pobi) {
+		
 		int left = 0, right = 0, pobi_Max = 0;
 
 		for (int i = 0; i < pobi.size(); i++) {
@@ -112,7 +115,8 @@ class Problem1 {
 	}
 /////////////////////////////////////////////////////////////////////////////////
 	// 7. crong의 리스트에 담긴 값에서 큰 수를 찾아내는 메서드
-	public int crong_Max() {
+	public int crong_Max(List<Integer> crong) {
+		
 		int left = 0, right = 0, crong_Max = 0;
 		
 		for (int i = 0; i < crong.size(); i++) {
@@ -158,27 +162,3 @@ class Problem1 {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
