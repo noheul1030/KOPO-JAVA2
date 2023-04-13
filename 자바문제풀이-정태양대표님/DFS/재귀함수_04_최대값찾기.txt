@@ -1,0 +1,23 @@
+package Solution;
+import java.util.*;
+
+public class Solution {
+	public static void main(String[] args)  {
+		int arr[] = {0, 20, 40, 60, 80, 100};
+		System.out.println(ArraySort(arr, 4));
+	}
+	
+	public static int ArraySort(int[] a, int n)
+	{
+		int x;
+		if(n == 1)
+			return a[0];
+		else
+			x = ArraySort(a, n - 1);
+		
+		if(x > a[n - 1])
+			return x;
+		else
+			return a[n - 1];
+	}
+}
