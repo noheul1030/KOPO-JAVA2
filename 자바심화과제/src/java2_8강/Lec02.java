@@ -14,7 +14,7 @@ public class Lec02 {
 		// 입력 받은 값이 null이면
 		if ((kopo11_readtxt = kopo11_br.readLine()) == null) {
 			System.out.printf("빈 파일입니다\n"); // 출력 개행
-			return; // 리턴
+//			return; // 리턴
 		}
 		
 		// \t 기준으로 나눠서 배열에 저장
