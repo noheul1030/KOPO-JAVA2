@@ -1,6 +1,8 @@
 package JSON.kopo11;
 
 import java.io.*;
+import java.nio.charset.Charset;
+
 import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
 
@@ -50,11 +52,11 @@ public class JSONMain {
 
 		try {
 			// BufferedWriter로 쓰게될 입력값을 "UTF-8"로 맞춰주는 객체 생성
-			BufferedWriter kopo11_file = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream("C:\\Users\\노을\\Documents\\GitHub\\KOPO-JAVA2\\XMLProject\\jsontest.json"),
-					"UTF-8"));
+//			BufferedWriter kopo11_file = new BufferedWriter(new OutputStreamWriter(
+//					new FileOutputStream("C:\\Users\\노을\\Documents\\GitHub\\KOPO-JAVA2\\XMLProject\\jsontest.json"),
+//					"UTF-8"));
 			// FileWriter는 다른곳에서 파일을 read할 때 한글이 깨지는 현상이 발생함.
-//			FileWriter kopo11_file = new FileWriter("C:\\Users\\노을\\Documents\\GitHub\\KOPO-JAVA2\\XMLProject\\jsontest.json");
+			FileWriter kopo11_file = new FileWriter("C:\\Users\\노을\\Documents\\GitHub\\KOPO-JAVA2\\XMLProject\\jsontest.json",Charset.forName("UTF-8"));
 			kopo11_file.write(kopo11_datasArray.toJSONString()); // kopo11_file에 kopo11_datasArray.toJSONString 값 입력
 			kopo11_file.flush(); // 현재 버퍼에 저장되어 있는 내용을 클라이언트로 전송하고 버퍼를 비운다.
 			kopo11_file.close(); // BufferedWriter 종료
