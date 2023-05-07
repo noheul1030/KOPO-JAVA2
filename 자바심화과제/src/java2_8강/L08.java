@@ -25,7 +25,8 @@ public class L08 {
 			if (kopo11_field.length > 2 && kopo11_field[2].replace("^", "").trim().substring(0, 1).equals("A")) {
 				kopo11_s.append(kopo11_field[0].replace("^", "").trim()); // s에 field[0]번째 값의 ^을 ""로 replace,trim 공백제거한 데이터를 추가해준다.
 				for (int kopo11_i = 1; kopo11_i < kopo11_field.length; kopo11_i++) { // field[i]번째의 길이 만큼 도는 반복문
-					kopo11_s.append("," + kopo11_field[kopo11_i].replace("^", "").trim()); // s에 , +  s에 field[i]번째 값의 ^을 ""로 replace,trim 공백제거한 데이터를 추가해준다.
+					// s에 , +  s에 field[i]번째 값의 ^을 ""로 replace,trim 공백제거한 데이터를 추가해준다.
+					kopo11_s.append("," + kopo11_field[kopo11_i].replace("^", "").trim()); 
 				}
 				kopo11_bw1.write(kopo11_s.toString()); // BufferedWriter에 s값 쓰기 입력
 				kopo11_bw1.newLine(); // BufferedWriter 개행

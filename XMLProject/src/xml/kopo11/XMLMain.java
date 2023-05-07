@@ -37,11 +37,11 @@ public class XMLMain {
 
 		System.out.printf("*********************************\n"); // ******* 출력 개행
 		for (int kopo11_i = 0; kopo11_i < kopo11_tag_name.getLength(); kopo11_i++) { // kopo11_tag_name의 길이만큼 도는 반복문
-			System.out.printf("이름 : %s\n", kopo11_tag_name.item(kopo11_i).getFirstChild().getNodeValue());
-			System.out.printf("학번 : %s\n", kopo11_tag_studentid.item(kopo11_i).getFirstChild().getNodeValue()); // String 주의
-			System.out.printf("국어 : %s\n", kopo11_tag_kor.item(kopo11_i).getFirstChild().getNodeValue()); // String 주의
-			System.out.printf("영어 : %s\n", kopo11_tag_eng.item(kopo11_i).getFirstChild().getNodeValue()); // String 주의
-			System.out.printf("수학 : %s\n", kopo11_tag_mat.item(kopo11_i).getFirstChild().getNodeValue()); // String 주의
+			System.out.printf("이름 : %s\n", kopo11_tag_name.item(kopo11_i).getFirstChild().getNodeValue()); // 이름 값 print 
+			System.out.printf("학번 : %s\n", kopo11_tag_studentid.item(kopo11_i).getFirstChild().getNodeValue()); // String 주의 /// 학번 값 print
+			System.out.printf("국어 : %s\n", kopo11_tag_kor.item(kopo11_i).getFirstChild().getNodeValue()); // String 주의 /// 국어점수 값 print
+			System.out.printf("영어 : %s\n", kopo11_tag_eng.item(kopo11_i).getFirstChild().getNodeValue()); // String 주의 /// 영어점수 값 print
+			System.out.printf("수학 : %s\n", kopo11_tag_mat.item(kopo11_i).getFirstChild().getNodeValue()); // String 주의 /// 수학점수 값 print
 			System.out.printf("*********************************\n"); // ******* 출력 개행
 		}
 
